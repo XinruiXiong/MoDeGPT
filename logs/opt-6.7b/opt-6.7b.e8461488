@@ -1,0 +1,318 @@
+2025-04-30 20:46:49,045 - INFO - Loading model: facebook/opt-6.7b
+2025-04-30 20:46:49,047 - INFO - Loading model from: facebook/opt-6.7b
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.28s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.91s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.11s/it]
+2025-04-30 20:46:56,395 - INFO - ✔ Loaded with device_map='auto', float16, low_cpu_mem_usage=True.
+2025-04-30 20:46:56,397 - INFO - Loading calibration and evaluation texts...
+2025-04-30 20:47:04,339 - INFO - Evaluating original model (for baseline perplexity)...
+2025-04-30 20:47:10,594 - INFO - Original model perplexity on WikiText2: 8.47
+2025-04-30 20:47:10,594 - INFO - Calibrating model...
+2025-04-30 20:47:10,594 - INFO - Detected architecture: opt
+2025-04-30 20:48:14,231 - INFO - Finished calibration and computed BI scores.
+2025-04-30 20:48:14,234 - INFO - Allocating layer sparsity...
+2025-04-30 20:48:14,235 - INFO - Allocating global sparsity using target keep ratio 0.5000 and temperature 1.0
+2025-04-30 20:48:14,235 - INFO - Layer  0: keep_ratio = 0.5000 (BI = -0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer  1: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer  2: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer  3: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer  4: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer  5: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer  6: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer  7: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer  8: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer  9: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 10: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 11: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 12: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 13: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 14: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 15: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 16: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 17: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 18: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 19: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 20: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 21: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 22: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 23: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 24: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 25: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 26: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 27: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 28: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 29: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 30: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Layer 31: keep_ratio = 0.5000 (BI = 0.0000)
+2025-04-30 20:48:14,235 - INFO - Freeing original model from GPU before compression...
+2025-04-30 20:48:18,108 - INFO - n_layers=32, n_heads=32, d_model=4096, head_dim=128
+2025-04-30 20:48:18,108 - INFO - Applying MoDeGPT compression methods...
+2025-04-30 20:51:29,473 - INFO - [MLP] Compressed layer 0 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 20:54:47,296 - INFO - [MLP] Compressed layer 1 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 20:58:25,448 - INFO - [MLP] Compressed layer 2 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:01:54,607 - INFO - [MLP] Compressed layer 3 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:05:17,642 - INFO - [MLP] Compressed layer 4 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:08:42,493 - INFO - [MLP] Compressed layer 5 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:12:26,333 - INFO - [MLP] Compressed layer 6 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:16:10,036 - INFO - [MLP] Compressed layer 7 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:20:03,865 - INFO - [MLP] Compressed layer 8 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:24:00,691 - INFO - [MLP] Compressed layer 9 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:28:09,202 - INFO - [MLP] Compressed layer 10 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:32:26,493 - INFO - [MLP] Compressed layer 11 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:36:41,492 - INFO - [MLP] Compressed layer 12 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:40:42,444 - INFO - [MLP] Compressed layer 13 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:45:06,496 - INFO - [MLP] Compressed layer 14 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:49:20,653 - INFO - [MLP] Compressed layer 15 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:53:36,345 - INFO - [MLP] Compressed layer 16 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 21:57:37,461 - INFO - [MLP] Compressed layer 17 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:01:03,941 - INFO - [MLP] Compressed layer 18 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:04:19,469 - INFO - [MLP] Compressed layer 19 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:07:28,036 - INFO - [MLP] Compressed layer 20 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:10:21,458 - INFO - [MLP] Compressed layer 21 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:13:04,400 - INFO - [MLP] Compressed layer 22 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:15:41,403 - INFO - [MLP] Compressed layer 23 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:18:10,355 - INFO - [MLP] Compressed layer 24 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:20:23,850 - INFO - [MLP] Compressed layer 25 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:22:35,063 - INFO - [MLP] Compressed layer 26 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:24:39,977 - INFO - [MLP] Compressed layer 27 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:26:49,546 - INFO - [MLP] Compressed layer 28 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:28:37,617 - INFO - [MLP] Compressed layer 29 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:30:42,934 - INFO - [MLP] Compressed layer 30 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:33:02,632 - INFO - [MLP] Compressed layer 31 to rank 8192 (Nyström, λ=0.01)
+2025-04-30 22:33:26,348 - INFO - [QK] Compressed layer 0 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:33:49,916 - INFO - [QK] Compressed layer 1 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:34:13,408 - INFO - [QK] Compressed layer 2 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:34:36,924 - INFO - [QK] Compressed layer 3 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:35:00,398 - INFO - [QK] Compressed layer 4 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:35:23,891 - INFO - [QK] Compressed layer 5 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:35:47,316 - INFO - [QK] Compressed layer 6 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:36:10,793 - INFO - [QK] Compressed layer 7 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:36:34,199 - INFO - [QK] Compressed layer 8 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:36:57,684 - INFO - [QK] Compressed layer 9 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:37:21,074 - INFO - [QK] Compressed layer 10 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:37:44,515 - INFO - [QK] Compressed layer 11 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:38:07,901 - INFO - [QK] Compressed layer 12 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:38:31,300 - INFO - [QK] Compressed layer 13 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:38:54,718 - INFO - [QK] Compressed layer 14 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:39:18,178 - INFO - [QK] Compressed layer 15 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:39:41,584 - INFO - [QK] Compressed layer 16 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:40:04,871 - INFO - [QK] Compressed layer 17 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:40:27,933 - INFO - [QK] Compressed layer 18 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:40:51,213 - INFO - [QK] Compressed layer 19 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:41:14,219 - INFO - [QK] Compressed layer 20 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:41:29,409 - INFO - [QK] Compressed layer 21 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:41:36,820 - INFO - [QK] Compressed layer 22 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:41:43,820 - INFO - [QK] Compressed layer 23 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:41:50,852 - INFO - [QK] Compressed layer 24 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:41:57,844 - INFO - [QK] Compressed layer 25 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:42:05,219 - INFO - [QK] Compressed layer 26 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:42:12,621 - INFO - [QK] Compressed layer 27 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:42:19,694 - INFO - [QK] Compressed layer 28 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:42:27,511 - INFO - [QK] Compressed layer 29 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:42:35,348 - INFO - [QK] Compressed layer 30 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:42:42,411 - INFO - [QK] Compressed layer 31 to rank 64 per head (ridge λ=0.01)
+2025-04-30 22:42:42,415 - WARNING - [VO] Compression failed at layer 0: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,415 - WARNING - [VO] Compression failed at layer 1: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,415 - WARNING - [VO] Compression failed at layer 2: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,415 - WARNING - [VO] Compression failed at layer 3: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,415 - WARNING - [VO] Compression failed at layer 4: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,415 - WARNING - [VO] Compression failed at layer 5: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,415 - WARNING - [VO] Compression failed at layer 6: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,415 - WARNING - [VO] Compression failed at layer 7: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,415 - WARNING - [VO] Compression failed at layer 8: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,415 - WARNING - [VO] Compression failed at layer 9: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 10: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 11: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 12: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 13: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 14: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 15: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 16: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 17: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 18: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 19: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 20: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 21: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 22: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 23: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 24: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 25: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 26: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,416 - WARNING - [VO] Compression failed at layer 27: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,417 - WARNING - [VO] Compression failed at layer 28: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,417 - WARNING - [VO] Compression failed at layer 29: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,417 - WARNING - [VO] Compression failed at layer 30: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,417 - WARNING - [VO] Compression failed at layer 31: to() received an invalid combination of arguments - got (torch.dtype, device=str), but expected one of:
+ * (torch.device device = None, torch.dtype dtype = None, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (torch.dtype dtype, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+ * (Tensor tensor, bool non_blocking = False, bool copy = False, *, torch.memory_format memory_format = None)
+
+2025-04-30 22:42:42,417 - INFO - Saving compressed model...
+2025-04-30 22:44:46,758 - INFO - ✔ Model, tokenizer, and tokenizer_source.txt saved to compressed_output/opt-6.7b
+2025-04-30 22:44:46,770 - INFO - Reloading compressed model for evaluation...
+2025-04-30 22:44:46,770 - INFO - Reloading compressed model from: compressed_output/opt-6.7b
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:03,  1.93s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:03<00:01,  1.76s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.23s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.39s/it]
+Some parameters are on the meta device because they were offloaded to the cpu.
+2025-04-30 22:44:51,365 - INFO - ✔ Reloaded compressed model and tokenizer successfully.
+Traceback (most recent call last):
+  File "/u/home/x/xxiong/MoDeGPT/run_modegpt.py", line 354, in <module>
+    main()
+  File "/u/home/x/xxiong/MoDeGPT/run_modegpt.py", line 341, in main
+    compressed_ppl = compute_perplexity(compressed_model, tokenizer, eval_texts, device=device)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/u/home/x/xxiong/MoDeGPT/evaluation.py", line 39, in compute_perplexity
+    outputs = model(input_ids=input_chunk, labels=labels, attention_mask=attention_mask)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 1117, in forward
+    outputs = self.model.decoder(
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 883, in forward
+    layer_outputs = decoder_layer(
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 524, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 204, in forward
+    attn_weights = attn_weights.view(bsz, self.num_heads, tgt_len, src_len) + attention_mask
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 256.00 MiB. GPU 3 has a total capacity of 79.15 GiB of which 16.12 MiB is free. Including non-PyTorch memory, this process has 1.97 GiB memory in use. Process 130962 has 77.15 GiB memory in use. Of the allocated memory 1.47 GiB is allocated by PyTorch, and 5.57 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

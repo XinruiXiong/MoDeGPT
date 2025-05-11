@@ -1,0 +1,50 @@
+2025-05-01 21:33:08,665 - INFO - Loading model: facebook/opt-6.7b
+2025-05-01 21:33:08,666 - INFO - Loading model from: facebook/opt-6.7b
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.83it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.68it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.32it/s]
+2025-05-01 21:33:16,832 - INFO - ✔ Loaded model on cuda:0 with float16.
+2025-05-01 21:33:16,833 - INFO - Loading calibration and evaluation texts...
+2025-05-01 21:33:27,454 - INFO - Evaluating original model (for baseline perplexity)...
+2025-05-01 21:35:12,861 - INFO - Original model perplexity on WikiText2: 10.29
+2025-05-01 21:35:12,863 - INFO - Calibrating model...
+2025-05-01 21:35:12,863 - INFO - Detected architecture: opt
+2025-05-01 21:37:22,988 - INFO - Finished calibration and computed BI scores.
+2025-05-01 21:37:22,991 - INFO - Allocating layer sparsity...
+2025-05-01 21:37:22,991 - INFO - Allocating global sparsity using target keep ratio 0.5000 and temperature 1.0
+2025-05-01 21:37:22,992 - INFO - Layer  0: keep_ratio = 0.2003 (BI = 0.9506)
+2025-05-01 21:37:22,992 - INFO - Layer  1: keep_ratio = 0.5097 (BI = 0.0167)
+2025-05-01 21:37:22,992 - INFO - Layer  2: keep_ratio = 0.5169 (BI = 0.0027)
+2025-05-01 21:37:22,992 - INFO - Layer  3: keep_ratio = 0.5174 (BI = 0.0017)
+2025-05-01 21:37:22,992 - INFO - Layer  4: keep_ratio = 0.5175 (BI = 0.0016)
+2025-05-01 21:37:22,992 - INFO - Layer  5: keep_ratio = 0.5173 (BI = 0.0019)
+2025-05-01 21:37:22,992 - INFO - Layer  6: keep_ratio = 0.5171 (BI = 0.0024)
+2025-05-01 21:37:22,992 - INFO - Layer  7: keep_ratio = 0.5169 (BI = 0.0028)
+2025-05-01 21:37:22,992 - INFO - Layer  8: keep_ratio = 0.5164 (BI = 0.0037)
+2025-05-01 21:37:22,992 - INFO - Layer  9: keep_ratio = 0.5157 (BI = 0.0050)
+2025-05-01 21:37:22,992 - INFO - Layer 10: keep_ratio = 0.5154 (BI = 0.0057)
+2025-05-01 21:37:22,992 - INFO - Layer 11: keep_ratio = 0.5146 (BI = 0.0073)
+2025-05-01 21:37:22,992 - INFO - Layer 12: keep_ratio = 0.5139 (BI = 0.0086)
+2025-05-01 21:37:22,992 - INFO - Layer 13: keep_ratio = 0.5130 (BI = 0.0103)
+2025-05-01 21:37:22,992 - INFO - Layer 14: keep_ratio = 0.5121 (BI = 0.0121)
+2025-05-01 21:37:22,992 - INFO - Layer 15: keep_ratio = 0.5105 (BI = 0.0152)
+2025-05-01 21:37:22,992 - INFO - Layer 16: keep_ratio = 0.5091 (BI = 0.0180)
+2025-05-01 21:37:22,992 - INFO - Layer 17: keep_ratio = 0.5079 (BI = 0.0204)
+2025-05-01 21:37:22,992 - INFO - Layer 18: keep_ratio = 0.5067 (BI = 0.0227)
+2025-05-01 21:37:22,992 - INFO - Layer 19: keep_ratio = 0.5054 (BI = 0.0253)
+2025-05-01 21:37:22,992 - INFO - Layer 20: keep_ratio = 0.5047 (BI = 0.0266)
+2025-05-01 21:37:22,992 - INFO - Layer 21: keep_ratio = 0.5028 (BI = 0.0304)
+2025-05-01 21:37:22,992 - INFO - Layer 22: keep_ratio = 0.5041 (BI = 0.0279)
+2025-05-01 21:37:22,992 - INFO - Layer 23: keep_ratio = 0.5016 (BI = 0.0329)
+2025-05-01 21:37:22,992 - INFO - Layer 24: keep_ratio = 0.5024 (BI = 0.0312)
+2025-05-01 21:37:22,992 - INFO - Layer 25: keep_ratio = 0.5023 (BI = 0.0315)
+2025-05-01 21:37:22,992 - INFO - Layer 26: keep_ratio = 0.5020 (BI = 0.0319)
+2025-05-01 21:37:22,992 - INFO - Layer 27: keep_ratio = 0.5037 (BI = 0.0287)
+2025-05-01 21:37:22,992 - INFO - Layer 28: keep_ratio = 0.5055 (BI = 0.0250)
+2025-05-01 21:37:22,992 - INFO - Layer 29: keep_ratio = 0.5064 (BI = 0.0233)
+2025-05-01 21:37:22,992 - INFO - Layer 30: keep_ratio = 0.5056 (BI = 0.0248)
+2025-05-01 21:37:22,992 - INFO - Layer 31: keep_ratio = 0.5050 (BI = 0.0261)
+2025-05-01 21:37:22,992 - INFO - Freeing original model from GPU before compression...
+2025-05-01 21:37:24,128 - INFO - n_layers=32, n_heads=32, d_model=4096, head_dim=128
+2025-05-01 21:37:24,128 - INFO - Applying MoDeGPT compression methods...
+2025-05-01 21:38:34,354 - INFO - [MLP] Compressed layer 0 to rank 3282 (Nyström, λ=0.01)
+2025-05-01 21:40:36,716 - INFO - [MLP] Compressed layer 1 to rank 8351 (Nyström, λ=0.01)
+2025-05-01 21:42:36,086 - INFO - [MLP] Compressed layer 2 to rank 8469 (Nyström, λ=0.01)

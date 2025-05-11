@@ -1,0 +1,47 @@
+2025-04-30 22:42:13,109 - INFO - Loading model: facebook/opt-6.7b
+2025-04-30 22:42:13,110 - INFO - Loading model from: facebook/opt-6.7b
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.05s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.55s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.77s/it]
+Some parameters are on the meta device because they were offloaded to the cpu.
+2025-04-30 22:42:22,937 - INFO - ✔ Loaded with device_map='auto', float16, low_cpu_mem_usage=True.
+2025-04-30 22:42:22,938 - INFO - Loading calibration and evaluation texts...
+2025-04-30 22:42:34,870 - INFO - Evaluating original model (for baseline perplexity)...
+Traceback (most recent call last):
+  File "/u/home/x/xxiong/MoDeGPT/run_modegpt.py", line 354, in <module>
+    main()
+  File "/u/home/x/xxiong/MoDeGPT/run_modegpt.py", line 250, in main
+    baseline_ppl = compute_perplexity(model, tokenizer, eval_texts, device=device)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/u/home/x/xxiong/MoDeGPT/evaluation.py", line 39, in compute_perplexity
+    outputs = model(input_ids=input_chunk, labels=labels, attention_mask=attention_mask)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 1117, in forward
+    outputs = self.model.decoder(
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 883, in forward
+    layer_outputs = decoder_layer(
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 524, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/opt/modeling_opt.py", line 191, in forward
+    attn_weights = torch.bmm(query_states, key_states.transpose(1, 2))
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 256.00 MiB. GPU 3 has a total capacity of 79.15 GiB of which 124.56 MiB is free. Process 121797 has 526.00 MiB memory in use. Process 130962 has 77.15 GiB memory in use. Including non-PyTorch memory, this process has 1.34 GiB memory in use. Of the allocated memory 864.33 MiB is allocated by PyTorch, and 5.67 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

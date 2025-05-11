@@ -1,0 +1,1143 @@
+2025-05-04 07:51:46,542 - INFO - Loading model: meta-llama/Llama-2-7b-hf
+2025-05-04 07:51:46,542 - INFO - Loading model from: meta-llama/Llama-2-7b-hf
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  7.58it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.75it/s]
+2025-05-04 07:51:56,656 - INFO - ✔ Loaded model on cuda:0 with float16.
+2025-05-04 07:51:56,657 - INFO - No pad_token found. Set pad_token = eos_token.
+2025-05-04 07:51:56,658 - INFO - Loading calibration and evaluation texts...
+2025-05-04 07:52:07,018 - INFO - Evaluating original model (for baseline perplexity)...
+2025-05-04 07:52:34,634 - INFO - Original model perplexity on WikiText2: 5.72
+2025-05-04 07:52:34,635 - INFO - Calibrating model...
+2025-05-04 07:52:34,635 - INFO - Detected architecture: llama
+2025-05-04 07:55:33,775 - INFO - Finished calibration and computed BI scores.
+2025-05-04 07:55:33,777 - INFO - Allocating layer sparsity...
+2025-05-04 07:55:33,777 - INFO - Allocating global sparsity using target keep ratio 0.5000 and temperature 1.0
+2025-05-04 07:55:33,778 - INFO - Layer  0: keep_ratio = 1.0000 (BI = 0.4532)
+2025-05-04 07:55:33,778 - INFO - Layer  1: keep_ratio = 0.3774 (BI = 0.3471)
+2025-05-04 07:55:33,778 - INFO - Layer  2: keep_ratio = 0.4513 (BI = 0.1683)
+2025-05-04 07:55:33,778 - INFO - Layer  3: keep_ratio = 0.4585 (BI = 0.1526)
+2025-05-04 07:55:33,778 - INFO - Layer  4: keep_ratio = 0.4563 (BI = 0.1575)
+2025-05-04 07:55:33,778 - INFO - Layer  5: keep_ratio = 0.4629 (BI = 0.1431)
+2025-05-04 07:55:33,778 - INFO - Layer  6: keep_ratio = 0.4640 (BI = 0.1407)
+2025-05-04 07:55:33,778 - INFO - Layer  7: keep_ratio = 0.4671 (BI = 0.1339)
+2025-05-04 07:55:33,778 - INFO - Layer  8: keep_ratio = 0.4736 (BI = 0.1201)
+2025-05-04 07:55:33,778 - INFO - Layer  9: keep_ratio = 0.4782 (BI = 0.1105)
+2025-05-04 07:55:33,778 - INFO - Layer 10: keep_ratio = 0.4819 (BI = 0.1027)
+2025-05-04 07:55:33,778 - INFO - Layer 11: keep_ratio = 0.4873 (BI = 0.0916)
+2025-05-04 07:55:33,778 - INFO - Layer 12: keep_ratio = 0.4869 (BI = 0.0925)
+2025-05-04 07:55:33,778 - INFO - Layer 13: keep_ratio = 0.4864 (BI = 0.0936)
+2025-05-04 07:55:33,778 - INFO - Layer 14: keep_ratio = 0.4904 (BI = 0.0853)
+2025-05-04 07:55:33,778 - INFO - Layer 15: keep_ratio = 0.4856 (BI = 0.0952)
+2025-05-04 07:55:33,778 - INFO - Layer 16: keep_ratio = 0.4893 (BI = 0.0876)
+2025-05-04 07:55:33,778 - INFO - Layer 17: keep_ratio = 0.4964 (BI = 0.0731)
+2025-05-04 07:55:33,778 - INFO - Layer 18: keep_ratio = 0.4998 (BI = 0.0663)
+2025-05-04 07:55:33,778 - INFO - Layer 19: keep_ratio = 0.5058 (BI = 0.0543)
+2025-05-04 07:55:33,778 - INFO - Layer 20: keep_ratio = 0.5073 (BI = 0.0514)
+2025-05-04 07:55:33,778 - INFO - Layer 21: keep_ratio = 0.5130 (BI = 0.0403)
+2025-05-04 07:55:33,778 - INFO - Layer 22: keep_ratio = 0.5135 (BI = 0.0393)
+2025-05-04 07:55:33,778 - INFO - Layer 23: keep_ratio = 0.5170 (BI = 0.0324)
+2025-05-04 07:55:33,778 - INFO - Layer 24: keep_ratio = 0.5174 (BI = 0.0317)
+2025-05-04 07:55:33,778 - INFO - Layer 25: keep_ratio = 0.5174 (BI = 0.0317)
+2025-05-04 07:55:33,778 - INFO - Layer 26: keep_ratio = 0.5186 (BI = 0.0295)
+2025-05-04 07:55:33,778 - INFO - Layer 27: keep_ratio = 0.5191 (BI = 0.0284)
+2025-05-04 07:55:33,778 - INFO - Layer 28: keep_ratio = 0.5180 (BI = 0.0306)
+2025-05-04 07:55:33,778 - INFO - Layer 29: keep_ratio = 0.5170 (BI = 0.0326)
+2025-05-04 07:55:33,778 - INFO - Layer 30: keep_ratio = 0.4886 (BI = 0.0890)
+2025-05-04 07:55:33,778 - INFO - Layer 31: keep_ratio = 0.3540 (BI = 0.4112)
+2025-05-04 07:55:33,778 - INFO - Freeing original model from GPU before compression...
+2025-05-04 07:55:37,548 - INFO - n_layers=32, n_heads=32, d_model=4096, head_dim=128
+2025-05-04 07:55:37,549 - INFO - Applying MoDeGPT compression methods...
+2025-05-04 07:56:12,517 - INFO - [MLP] Compressed layer 0 to rank 11008 (Nyström, λ=0.01)
+2025-05-04 07:56:15,715 - INFO - [MLP] Compressed layer 1 to rank 4154 (Nyström, λ=0.01)
+2025-05-04 07:56:20,352 - INFO - [MLP] Compressed layer 2 to rank 4968 (Nyström, λ=0.01)
+2025-05-04 07:56:25,066 - INFO - [MLP] Compressed layer 3 to rank 5046 (Nyström, λ=0.01)
+2025-05-04 07:56:29,535 - INFO - [MLP] Compressed layer 4 to rank 5022 (Nyström, λ=0.01)
+2025-05-04 07:56:36,121 - INFO - [MLP] Compressed layer 5 to rank 5095 (Nyström, λ=0.01)
+2025-05-04 07:57:05,312 - INFO - [MLP] Compressed layer 6 to rank 5107 (Nyström, λ=0.01)
+2025-05-04 07:57:35,763 - INFO - [MLP] Compressed layer 7 to rank 5142 (Nyström, λ=0.01)
+2025-05-04 07:58:07,544 - INFO - [MLP] Compressed layer 8 to rank 5213 (Nyström, λ=0.01)
+2025-05-04 07:58:39,171 - INFO - [MLP] Compressed layer 9 to rank 5264 (Nyström, λ=0.01)
+2025-05-04 07:59:11,450 - INFO - [MLP] Compressed layer 10 to rank 5305 (Nyström, λ=0.01)
+2025-05-04 07:59:43,598 - INFO - [MLP] Compressed layer 11 to rank 5364 (Nyström, λ=0.01)
+2025-05-04 08:00:16,169 - INFO - [MLP] Compressed layer 12 to rank 5359 (Nyström, λ=0.01)
+2025-05-04 08:00:48,230 - INFO - [MLP] Compressed layer 13 to rank 5354 (Nyström, λ=0.01)
+2025-05-04 08:01:20,641 - INFO - [MLP] Compressed layer 14 to rank 5398 (Nyström, λ=0.01)
+2025-05-04 08:01:52,974 - INFO - [MLP] Compressed layer 15 to rank 5345 (Nyström, λ=0.01)
+2025-05-04 08:02:25,204 - INFO - [MLP] Compressed layer 16 to rank 5385 (Nyström, λ=0.01)
+2025-05-04 08:02:58,475 - INFO - [MLP] Compressed layer 17 to rank 5464 (Nyström, λ=0.01)
+2025-05-04 08:03:31,684 - INFO - [MLP] Compressed layer 18 to rank 5502 (Nyström, λ=0.01)
+2025-05-04 08:04:04,477 - INFO - [MLP] Compressed layer 19 to rank 5568 (Nyström, λ=0.01)
+2025-05-04 08:04:38,993 - INFO - [MLP] Compressed layer 20 to rank 5584 (Nyström, λ=0.01)
+2025-05-04 08:05:12,962 - INFO - [MLP] Compressed layer 21 to rank 5646 (Nyström, λ=0.01)
+2025-05-04 08:05:46,696 - INFO - [MLP] Compressed layer 22 to rank 5652 (Nyström, λ=0.01)
+2025-05-04 08:06:21,088 - INFO - [MLP] Compressed layer 23 to rank 5691 (Nyström, λ=0.01)
+2025-05-04 08:06:56,317 - INFO - [MLP] Compressed layer 24 to rank 5695 (Nyström, λ=0.01)
+2025-05-04 08:07:30,388 - INFO - [MLP] Compressed layer 25 to rank 5695 (Nyström, λ=0.01)
+2025-05-04 08:08:04,599 - INFO - [MLP] Compressed layer 26 to rank 5708 (Nyström, λ=0.01)
+2025-05-04 08:08:39,000 - INFO - [MLP] Compressed layer 27 to rank 5714 (Nyström, λ=0.01)
+2025-05-04 08:09:15,250 - INFO - [MLP] Compressed layer 28 to rank 5701 (Nyström, λ=0.01)
+2025-05-04 08:09:49,388 - INFO - [MLP] Compressed layer 29 to rank 5690 (Nyström, λ=0.01)
+2025-05-04 08:10:22,628 - INFO - [MLP] Compressed layer 30 to rank 5378 (Nyström, λ=0.01)
+2025-05-04 08:10:49,324 - INFO - [MLP] Compressed layer 31 to rank 3896 (Nyström, λ=0.01)
+2025-05-04 08:10:59,819 - INFO - [QK] Compressed layer 0 to rank 128 per head (ridge λ=0.01)
+2025-05-04 08:11:09,829 - INFO - [QK] Compressed layer 1 to rank 48 per head (ridge λ=0.01)
+2025-05-04 08:11:19,540 - INFO - [QK] Compressed layer 2 to rank 57 per head (ridge λ=0.01)
+2025-05-04 08:11:29,540 - INFO - [QK] Compressed layer 3 to rank 58 per head (ridge λ=0.01)
+2025-05-04 08:11:39,486 - INFO - [QK] Compressed layer 4 to rank 58 per head (ridge λ=0.01)
+2025-05-04 08:11:49,209 - INFO - [QK] Compressed layer 5 to rank 59 per head (ridge λ=0.01)
+2025-05-04 08:11:58,874 - INFO - [QK] Compressed layer 6 to rank 59 per head (ridge λ=0.01)
+2025-05-04 08:12:08,610 - INFO - [QK] Compressed layer 7 to rank 59 per head (ridge λ=0.01)
+2025-05-04 08:12:18,697 - INFO - [QK] Compressed layer 8 to rank 60 per head (ridge λ=0.01)
+2025-05-04 08:12:28,669 - INFO - [QK] Compressed layer 9 to rank 61 per head (ridge λ=0.01)
+2025-05-04 08:12:38,564 - INFO - [QK] Compressed layer 10 to rank 61 per head (ridge λ=0.01)
+2025-05-04 08:12:48,206 - INFO - [QK] Compressed layer 11 to rank 62 per head (ridge λ=0.01)
+2025-05-04 08:12:58,012 - INFO - [QK] Compressed layer 12 to rank 62 per head (ridge λ=0.01)
+2025-05-04 08:13:07,721 - INFO - [QK] Compressed layer 13 to rank 62 per head (ridge λ=0.01)
+2025-05-04 08:13:17,585 - INFO - [QK] Compressed layer 14 to rank 62 per head (ridge λ=0.01)
+2025-05-04 08:13:27,267 - INFO - [QK] Compressed layer 15 to rank 62 per head (ridge λ=0.01)
+2025-05-04 08:13:36,709 - INFO - [QK] Compressed layer 16 to rank 62 per head (ridge λ=0.01)
+2025-05-04 08:13:46,173 - INFO - [QK] Compressed layer 17 to rank 63 per head (ridge λ=0.01)
+2025-05-04 08:13:55,650 - INFO - [QK] Compressed layer 18 to rank 63 per head (ridge λ=0.01)
+2025-05-04 08:14:05,118 - INFO - [QK] Compressed layer 19 to rank 64 per head (ridge λ=0.01)
+2025-05-04 08:14:14,613 - INFO - [QK] Compressed layer 20 to rank 64 per head (ridge λ=0.01)
+2025-05-04 08:14:24,122 - INFO - [QK] Compressed layer 21 to rank 65 per head (ridge λ=0.01)
+2025-05-04 08:14:33,625 - INFO - [QK] Compressed layer 22 to rank 65 per head (ridge λ=0.01)
+2025-05-04 08:14:43,163 - INFO - [QK] Compressed layer 23 to rank 66 per head (ridge λ=0.01)
+2025-05-04 08:14:52,654 - INFO - [QK] Compressed layer 24 to rank 66 per head (ridge λ=0.01)
+2025-05-04 08:15:02,178 - INFO - [QK] Compressed layer 25 to rank 66 per head (ridge λ=0.01)
+2025-05-04 08:15:11,700 - INFO - [QK] Compressed layer 26 to rank 66 per head (ridge λ=0.01)
+2025-05-04 08:15:21,265 - INFO - [QK] Compressed layer 27 to rank 66 per head (ridge λ=0.01)
+2025-05-04 08:15:30,766 - INFO - [QK] Compressed layer 28 to rank 66 per head (ridge λ=0.01)
+2025-05-04 08:15:40,740 - INFO - [QK] Compressed layer 29 to rank 66 per head (ridge λ=0.01)
+2025-05-04 08:15:50,298 - INFO - [QK] Compressed layer 30 to rank 62 per head (ridge λ=0.01)
+2025-05-04 08:15:59,904 - INFO - [QK] Compressed layer 31 to rank 45 per head (ridge λ=0.01)
+2025-05-04 08:16:02,289 - INFO - [VO] Compressed layer 0 to rank 128 per head (λ=0.01)
+2025-05-04 08:16:02,934 - WARNING - [VO] Layer 1 Head 0: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,934 - WARNING - [VO] Layer 1 Head 1: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,935 - WARNING - [VO] Layer 1 Head 2: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,935 - WARNING - [VO] Layer 1 Head 3: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,935 - WARNING - [VO] Layer 1 Head 4: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,936 - WARNING - [VO] Layer 1 Head 5: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,936 - WARNING - [VO] Layer 1 Head 6: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,936 - WARNING - [VO] Layer 1 Head 7: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,936 - WARNING - [VO] Layer 1 Head 8: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,937 - WARNING - [VO] Layer 1 Head 9: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,937 - WARNING - [VO] Layer 1 Head 10: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,937 - WARNING - [VO] Layer 1 Head 11: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,937 - WARNING - [VO] Layer 1 Head 12: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,938 - WARNING - [VO] Layer 1 Head 13: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,938 - WARNING - [VO] Layer 1 Head 14: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,938 - WARNING - [VO] Layer 1 Head 15: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,938 - WARNING - [VO] Layer 1 Head 16: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,939 - WARNING - [VO] Layer 1 Head 17: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,939 - WARNING - [VO] Layer 1 Head 18: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,939 - WARNING - [VO] Layer 1 Head 19: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,939 - WARNING - [VO] Layer 1 Head 20: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,940 - WARNING - [VO] Layer 1 Head 21: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,940 - WARNING - [VO] Layer 1 Head 22: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,940 - WARNING - [VO] Layer 1 Head 23: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,941 - WARNING - [VO] Layer 1 Head 24: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,941 - WARNING - [VO] Layer 1 Head 25: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,941 - WARNING - [VO] Layer 1 Head 26: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,941 - WARNING - [VO] Layer 1 Head 27: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,942 - WARNING - [VO] Layer 1 Head 28: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,942 - WARNING - [VO] Layer 1 Head 29: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,942 - WARNING - [VO] Layer 1 Head 30: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,942 - WARNING - [VO] Layer 1 Head 31: compression failed: The size of tensor a (48) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,942 - INFO - [VO] Compressed layer 1 to rank 48 per head (λ=0.01)
+2025-05-04 08:16:02,991 - WARNING - [VO] Layer 2 Head 0: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,992 - WARNING - [VO] Layer 2 Head 1: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,992 - WARNING - [VO] Layer 2 Head 2: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,992 - WARNING - [VO] Layer 2 Head 3: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,992 - WARNING - [VO] Layer 2 Head 4: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,993 - WARNING - [VO] Layer 2 Head 5: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,993 - WARNING - [VO] Layer 2 Head 6: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,993 - WARNING - [VO] Layer 2 Head 7: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,993 - WARNING - [VO] Layer 2 Head 8: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,994 - WARNING - [VO] Layer 2 Head 9: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,994 - WARNING - [VO] Layer 2 Head 10: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,994 - WARNING - [VO] Layer 2 Head 11: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,994 - WARNING - [VO] Layer 2 Head 12: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,994 - WARNING - [VO] Layer 2 Head 13: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,994 - WARNING - [VO] Layer 2 Head 14: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,995 - WARNING - [VO] Layer 2 Head 15: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,995 - WARNING - [VO] Layer 2 Head 16: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,995 - WARNING - [VO] Layer 2 Head 17: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,995 - WARNING - [VO] Layer 2 Head 18: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,995 - WARNING - [VO] Layer 2 Head 19: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,995 - WARNING - [VO] Layer 2 Head 20: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,995 - WARNING - [VO] Layer 2 Head 21: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,995 - WARNING - [VO] Layer 2 Head 22: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,996 - WARNING - [VO] Layer 2 Head 23: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,996 - WARNING - [VO] Layer 2 Head 24: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,996 - WARNING - [VO] Layer 2 Head 25: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,996 - WARNING - [VO] Layer 2 Head 26: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,996 - WARNING - [VO] Layer 2 Head 27: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,996 - WARNING - [VO] Layer 2 Head 28: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,996 - WARNING - [VO] Layer 2 Head 29: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,997 - WARNING - [VO] Layer 2 Head 30: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,997 - WARNING - [VO] Layer 2 Head 31: compression failed: The size of tensor a (57) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:02,997 - INFO - [VO] Compressed layer 2 to rank 57 per head (λ=0.01)
+2025-05-04 08:16:03,048 - WARNING - [VO] Layer 3 Head 0: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,048 - WARNING - [VO] Layer 3 Head 1: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,048 - WARNING - [VO] Layer 3 Head 2: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,048 - WARNING - [VO] Layer 3 Head 3: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,049 - WARNING - [VO] Layer 3 Head 4: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,049 - WARNING - [VO] Layer 3 Head 5: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,049 - WARNING - [VO] Layer 3 Head 6: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,049 - WARNING - [VO] Layer 3 Head 7: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,049 - WARNING - [VO] Layer 3 Head 8: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,049 - WARNING - [VO] Layer 3 Head 9: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,049 - WARNING - [VO] Layer 3 Head 10: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,050 - WARNING - [VO] Layer 3 Head 11: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,050 - WARNING - [VO] Layer 3 Head 12: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,050 - WARNING - [VO] Layer 3 Head 13: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,050 - WARNING - [VO] Layer 3 Head 14: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,050 - WARNING - [VO] Layer 3 Head 15: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,050 - WARNING - [VO] Layer 3 Head 16: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,050 - WARNING - [VO] Layer 3 Head 17: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,051 - WARNING - [VO] Layer 3 Head 18: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,051 - WARNING - [VO] Layer 3 Head 19: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,051 - WARNING - [VO] Layer 3 Head 20: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,051 - WARNING - [VO] Layer 3 Head 21: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,051 - WARNING - [VO] Layer 3 Head 22: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,051 - WARNING - [VO] Layer 3 Head 23: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,051 - WARNING - [VO] Layer 3 Head 24: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,052 - WARNING - [VO] Layer 3 Head 25: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,052 - WARNING - [VO] Layer 3 Head 26: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,052 - WARNING - [VO] Layer 3 Head 27: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,052 - WARNING - [VO] Layer 3 Head 28: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,052 - WARNING - [VO] Layer 3 Head 29: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,052 - WARNING - [VO] Layer 3 Head 30: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,052 - WARNING - [VO] Layer 3 Head 31: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,052 - INFO - [VO] Compressed layer 3 to rank 58 per head (λ=0.01)
+2025-05-04 08:16:03,107 - WARNING - [VO] Layer 4 Head 0: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,107 - WARNING - [VO] Layer 4 Head 1: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,107 - WARNING - [VO] Layer 4 Head 2: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,108 - WARNING - [VO] Layer 4 Head 3: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,108 - WARNING - [VO] Layer 4 Head 4: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,108 - WARNING - [VO] Layer 4 Head 5: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,108 - WARNING - [VO] Layer 4 Head 6: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,108 - WARNING - [VO] Layer 4 Head 7: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,108 - WARNING - [VO] Layer 4 Head 8: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,108 - WARNING - [VO] Layer 4 Head 9: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,109 - WARNING - [VO] Layer 4 Head 10: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,109 - WARNING - [VO] Layer 4 Head 11: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,109 - WARNING - [VO] Layer 4 Head 12: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,109 - WARNING - [VO] Layer 4 Head 13: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,109 - WARNING - [VO] Layer 4 Head 14: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,109 - WARNING - [VO] Layer 4 Head 15: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,109 - WARNING - [VO] Layer 4 Head 16: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,110 - WARNING - [VO] Layer 4 Head 17: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,110 - WARNING - [VO] Layer 4 Head 18: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,110 - WARNING - [VO] Layer 4 Head 19: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,110 - WARNING - [VO] Layer 4 Head 20: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,110 - WARNING - [VO] Layer 4 Head 21: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,110 - WARNING - [VO] Layer 4 Head 22: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,110 - WARNING - [VO] Layer 4 Head 23: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,111 - WARNING - [VO] Layer 4 Head 24: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,111 - WARNING - [VO] Layer 4 Head 25: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,111 - WARNING - [VO] Layer 4 Head 26: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,111 - WARNING - [VO] Layer 4 Head 27: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,111 - WARNING - [VO] Layer 4 Head 28: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,111 - WARNING - [VO] Layer 4 Head 29: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,111 - WARNING - [VO] Layer 4 Head 30: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,112 - WARNING - [VO] Layer 4 Head 31: compression failed: The size of tensor a (58) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,112 - INFO - [VO] Compressed layer 4 to rank 58 per head (λ=0.01)
+2025-05-04 08:16:03,158 - WARNING - [VO] Layer 5 Head 0: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,158 - WARNING - [VO] Layer 5 Head 1: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,158 - WARNING - [VO] Layer 5 Head 2: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,158 - WARNING - [VO] Layer 5 Head 3: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,159 - WARNING - [VO] Layer 5 Head 4: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,159 - WARNING - [VO] Layer 5 Head 5: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,159 - WARNING - [VO] Layer 5 Head 6: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,159 - WARNING - [VO] Layer 5 Head 7: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,159 - WARNING - [VO] Layer 5 Head 8: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,159 - WARNING - [VO] Layer 5 Head 9: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,159 - WARNING - [VO] Layer 5 Head 10: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,160 - WARNING - [VO] Layer 5 Head 11: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,160 - WARNING - [VO] Layer 5 Head 12: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,160 - WARNING - [VO] Layer 5 Head 13: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,160 - WARNING - [VO] Layer 5 Head 14: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,160 - WARNING - [VO] Layer 5 Head 15: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,160 - WARNING - [VO] Layer 5 Head 16: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,160 - WARNING - [VO] Layer 5 Head 17: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,161 - WARNING - [VO] Layer 5 Head 18: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,161 - WARNING - [VO] Layer 5 Head 19: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,161 - WARNING - [VO] Layer 5 Head 20: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,161 - WARNING - [VO] Layer 5 Head 21: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,161 - WARNING - [VO] Layer 5 Head 22: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,161 - WARNING - [VO] Layer 5 Head 23: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,161 - WARNING - [VO] Layer 5 Head 24: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,162 - WARNING - [VO] Layer 5 Head 25: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,162 - WARNING - [VO] Layer 5 Head 26: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,162 - WARNING - [VO] Layer 5 Head 27: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,162 - WARNING - [VO] Layer 5 Head 28: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,162 - WARNING - [VO] Layer 5 Head 29: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,162 - WARNING - [VO] Layer 5 Head 30: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,162 - WARNING - [VO] Layer 5 Head 31: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,163 - INFO - [VO] Compressed layer 5 to rank 59 per head (λ=0.01)
+2025-05-04 08:16:03,199 - WARNING - [VO] Layer 6 Head 0: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,200 - WARNING - [VO] Layer 6 Head 1: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,200 - WARNING - [VO] Layer 6 Head 2: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,200 - WARNING - [VO] Layer 6 Head 3: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,200 - WARNING - [VO] Layer 6 Head 4: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,200 - WARNING - [VO] Layer 6 Head 5: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,200 - WARNING - [VO] Layer 6 Head 6: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,201 - WARNING - [VO] Layer 6 Head 7: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,201 - WARNING - [VO] Layer 6 Head 8: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,201 - WARNING - [VO] Layer 6 Head 9: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,201 - WARNING - [VO] Layer 6 Head 10: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,201 - WARNING - [VO] Layer 6 Head 11: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,201 - WARNING - [VO] Layer 6 Head 12: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,201 - WARNING - [VO] Layer 6 Head 13: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,202 - WARNING - [VO] Layer 6 Head 14: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,202 - WARNING - [VO] Layer 6 Head 15: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,202 - WARNING - [VO] Layer 6 Head 16: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,202 - WARNING - [VO] Layer 6 Head 17: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,202 - WARNING - [VO] Layer 6 Head 18: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,202 - WARNING - [VO] Layer 6 Head 19: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,202 - WARNING - [VO] Layer 6 Head 20: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,203 - WARNING - [VO] Layer 6 Head 21: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,203 - WARNING - [VO] Layer 6 Head 22: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,203 - WARNING - [VO] Layer 6 Head 23: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,203 - WARNING - [VO] Layer 6 Head 24: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,203 - WARNING - [VO] Layer 6 Head 25: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,203 - WARNING - [VO] Layer 6 Head 26: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,203 - WARNING - [VO] Layer 6 Head 27: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,204 - WARNING - [VO] Layer 6 Head 28: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,204 - WARNING - [VO] Layer 6 Head 29: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,204 - WARNING - [VO] Layer 6 Head 30: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,204 - WARNING - [VO] Layer 6 Head 31: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,204 - INFO - [VO] Compressed layer 6 to rank 59 per head (λ=0.01)
+2025-05-04 08:16:03,234 - WARNING - [VO] Layer 7 Head 0: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,234 - WARNING - [VO] Layer 7 Head 1: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,235 - WARNING - [VO] Layer 7 Head 2: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,235 - WARNING - [VO] Layer 7 Head 3: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,235 - WARNING - [VO] Layer 7 Head 4: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,235 - WARNING - [VO] Layer 7 Head 5: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,235 - WARNING - [VO] Layer 7 Head 6: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,235 - WARNING - [VO] Layer 7 Head 7: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,235 - WARNING - [VO] Layer 7 Head 8: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,236 - WARNING - [VO] Layer 7 Head 9: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,236 - WARNING - [VO] Layer 7 Head 10: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,236 - WARNING - [VO] Layer 7 Head 11: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,236 - WARNING - [VO] Layer 7 Head 12: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,236 - WARNING - [VO] Layer 7 Head 13: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,236 - WARNING - [VO] Layer 7 Head 14: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,236 - WARNING - [VO] Layer 7 Head 15: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,237 - WARNING - [VO] Layer 7 Head 16: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,237 - WARNING - [VO] Layer 7 Head 17: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,237 - WARNING - [VO] Layer 7 Head 18: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,237 - WARNING - [VO] Layer 7 Head 19: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,237 - WARNING - [VO] Layer 7 Head 20: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,237 - WARNING - [VO] Layer 7 Head 21: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,237 - WARNING - [VO] Layer 7 Head 22: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,238 - WARNING - [VO] Layer 7 Head 23: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,238 - WARNING - [VO] Layer 7 Head 24: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,238 - WARNING - [VO] Layer 7 Head 25: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,238 - WARNING - [VO] Layer 7 Head 26: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,238 - WARNING - [VO] Layer 7 Head 27: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,238 - WARNING - [VO] Layer 7 Head 28: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,238 - WARNING - [VO] Layer 7 Head 29: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,239 - WARNING - [VO] Layer 7 Head 30: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,239 - WARNING - [VO] Layer 7 Head 31: compression failed: The size of tensor a (59) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,239 - INFO - [VO] Compressed layer 7 to rank 59 per head (λ=0.01)
+2025-05-04 08:16:03,268 - WARNING - [VO] Layer 8 Head 0: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,268 - WARNING - [VO] Layer 8 Head 1: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,268 - WARNING - [VO] Layer 8 Head 2: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,269 - WARNING - [VO] Layer 8 Head 3: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,269 - WARNING - [VO] Layer 8 Head 4: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,269 - WARNING - [VO] Layer 8 Head 5: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,269 - WARNING - [VO] Layer 8 Head 6: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,269 - WARNING - [VO] Layer 8 Head 7: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,269 - WARNING - [VO] Layer 8 Head 8: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,269 - WARNING - [VO] Layer 8 Head 9: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,270 - WARNING - [VO] Layer 8 Head 10: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,270 - WARNING - [VO] Layer 8 Head 11: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,270 - WARNING - [VO] Layer 8 Head 12: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,270 - WARNING - [VO] Layer 8 Head 13: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,270 - WARNING - [VO] Layer 8 Head 14: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,270 - WARNING - [VO] Layer 8 Head 15: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,270 - WARNING - [VO] Layer 8 Head 16: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,271 - WARNING - [VO] Layer 8 Head 17: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,271 - WARNING - [VO] Layer 8 Head 18: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,271 - WARNING - [VO] Layer 8 Head 19: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,271 - WARNING - [VO] Layer 8 Head 20: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,271 - WARNING - [VO] Layer 8 Head 21: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,271 - WARNING - [VO] Layer 8 Head 22: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,271 - WARNING - [VO] Layer 8 Head 23: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,272 - WARNING - [VO] Layer 8 Head 24: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,272 - WARNING - [VO] Layer 8 Head 25: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,272 - WARNING - [VO] Layer 8 Head 26: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,272 - WARNING - [VO] Layer 8 Head 27: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,272 - WARNING - [VO] Layer 8 Head 28: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,272 - WARNING - [VO] Layer 8 Head 29: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,272 - WARNING - [VO] Layer 8 Head 30: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,273 - WARNING - [VO] Layer 8 Head 31: compression failed: The size of tensor a (60) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,273 - INFO - [VO] Compressed layer 8 to rank 60 per head (λ=0.01)
+2025-05-04 08:16:03,302 - WARNING - [VO] Layer 9 Head 0: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,303 - WARNING - [VO] Layer 9 Head 1: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,303 - WARNING - [VO] Layer 9 Head 2: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,303 - WARNING - [VO] Layer 9 Head 3: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,303 - WARNING - [VO] Layer 9 Head 4: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,303 - WARNING - [VO] Layer 9 Head 5: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,303 - WARNING - [VO] Layer 9 Head 6: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,303 - WARNING - [VO] Layer 9 Head 7: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,304 - WARNING - [VO] Layer 9 Head 8: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,304 - WARNING - [VO] Layer 9 Head 9: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,304 - WARNING - [VO] Layer 9 Head 10: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,304 - WARNING - [VO] Layer 9 Head 11: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,304 - WARNING - [VO] Layer 9 Head 12: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,304 - WARNING - [VO] Layer 9 Head 13: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,304 - WARNING - [VO] Layer 9 Head 14: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,305 - WARNING - [VO] Layer 9 Head 15: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,305 - WARNING - [VO] Layer 9 Head 16: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,305 - WARNING - [VO] Layer 9 Head 17: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,305 - WARNING - [VO] Layer 9 Head 18: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,305 - WARNING - [VO] Layer 9 Head 19: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,305 - WARNING - [VO] Layer 9 Head 20: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,305 - WARNING - [VO] Layer 9 Head 21: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,306 - WARNING - [VO] Layer 9 Head 22: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,306 - WARNING - [VO] Layer 9 Head 23: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,306 - WARNING - [VO] Layer 9 Head 24: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,306 - WARNING - [VO] Layer 9 Head 25: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,306 - WARNING - [VO] Layer 9 Head 26: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,306 - WARNING - [VO] Layer 9 Head 27: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,306 - WARNING - [VO] Layer 9 Head 28: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,307 - WARNING - [VO] Layer 9 Head 29: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,307 - WARNING - [VO] Layer 9 Head 30: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,307 - WARNING - [VO] Layer 9 Head 31: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,307 - INFO - [VO] Compressed layer 9 to rank 61 per head (λ=0.01)
+2025-05-04 08:16:03,338 - WARNING - [VO] Layer 10 Head 0: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,339 - WARNING - [VO] Layer 10 Head 1: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,339 - WARNING - [VO] Layer 10 Head 2: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,339 - WARNING - [VO] Layer 10 Head 3: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,339 - WARNING - [VO] Layer 10 Head 4: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,340 - WARNING - [VO] Layer 10 Head 5: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,340 - WARNING - [VO] Layer 10 Head 6: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,340 - WARNING - [VO] Layer 10 Head 7: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,340 - WARNING - [VO] Layer 10 Head 8: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,340 - WARNING - [VO] Layer 10 Head 9: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,340 - WARNING - [VO] Layer 10 Head 10: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,340 - WARNING - [VO] Layer 10 Head 11: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,341 - WARNING - [VO] Layer 10 Head 12: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,341 - WARNING - [VO] Layer 10 Head 13: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,341 - WARNING - [VO] Layer 10 Head 14: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,341 - WARNING - [VO] Layer 10 Head 15: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,341 - WARNING - [VO] Layer 10 Head 16: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,341 - WARNING - [VO] Layer 10 Head 17: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,341 - WARNING - [VO] Layer 10 Head 18: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,342 - WARNING - [VO] Layer 10 Head 19: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,342 - WARNING - [VO] Layer 10 Head 20: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,342 - WARNING - [VO] Layer 10 Head 21: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,342 - WARNING - [VO] Layer 10 Head 22: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,342 - WARNING - [VO] Layer 10 Head 23: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,342 - WARNING - [VO] Layer 10 Head 24: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,342 - WARNING - [VO] Layer 10 Head 25: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,343 - WARNING - [VO] Layer 10 Head 26: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,343 - WARNING - [VO] Layer 10 Head 27: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,343 - WARNING - [VO] Layer 10 Head 28: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,343 - WARNING - [VO] Layer 10 Head 29: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,343 - WARNING - [VO] Layer 10 Head 30: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,343 - WARNING - [VO] Layer 10 Head 31: compression failed: The size of tensor a (61) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,343 - INFO - [VO] Compressed layer 10 to rank 61 per head (λ=0.01)
+2025-05-04 08:16:03,373 - WARNING - [VO] Layer 11 Head 0: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,373 - WARNING - [VO] Layer 11 Head 1: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,373 - WARNING - [VO] Layer 11 Head 2: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,374 - WARNING - [VO] Layer 11 Head 3: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,374 - WARNING - [VO] Layer 11 Head 4: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,374 - WARNING - [VO] Layer 11 Head 5: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,374 - WARNING - [VO] Layer 11 Head 6: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,374 - WARNING - [VO] Layer 11 Head 7: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,374 - WARNING - [VO] Layer 11 Head 8: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,374 - WARNING - [VO] Layer 11 Head 9: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,375 - WARNING - [VO] Layer 11 Head 10: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,375 - WARNING - [VO] Layer 11 Head 11: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,375 - WARNING - [VO] Layer 11 Head 12: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,375 - WARNING - [VO] Layer 11 Head 13: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,375 - WARNING - [VO] Layer 11 Head 14: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,375 - WARNING - [VO] Layer 11 Head 15: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,375 - WARNING - [VO] Layer 11 Head 16: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,376 - WARNING - [VO] Layer 11 Head 17: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,376 - WARNING - [VO] Layer 11 Head 18: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,376 - WARNING - [VO] Layer 11 Head 19: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,376 - WARNING - [VO] Layer 11 Head 20: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,376 - WARNING - [VO] Layer 11 Head 21: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,376 - WARNING - [VO] Layer 11 Head 22: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,376 - WARNING - [VO] Layer 11 Head 23: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,377 - WARNING - [VO] Layer 11 Head 24: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,377 - WARNING - [VO] Layer 11 Head 25: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,377 - WARNING - [VO] Layer 11 Head 26: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,377 - WARNING - [VO] Layer 11 Head 27: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,377 - WARNING - [VO] Layer 11 Head 28: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,377 - WARNING - [VO] Layer 11 Head 29: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,377 - WARNING - [VO] Layer 11 Head 30: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,378 - WARNING - [VO] Layer 11 Head 31: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,378 - INFO - [VO] Compressed layer 11 to rank 62 per head (λ=0.01)
+2025-05-04 08:16:03,409 - WARNING - [VO] Layer 12 Head 0: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,409 - WARNING - [VO] Layer 12 Head 1: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,409 - WARNING - [VO] Layer 12 Head 2: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,409 - WARNING - [VO] Layer 12 Head 3: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,409 - WARNING - [VO] Layer 12 Head 4: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,410 - WARNING - [VO] Layer 12 Head 5: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,410 - WARNING - [VO] Layer 12 Head 6: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,410 - WARNING - [VO] Layer 12 Head 7: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,410 - WARNING - [VO] Layer 12 Head 8: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,410 - WARNING - [VO] Layer 12 Head 9: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,410 - WARNING - [VO] Layer 12 Head 10: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,410 - WARNING - [VO] Layer 12 Head 11: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,411 - WARNING - [VO] Layer 12 Head 12: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,411 - WARNING - [VO] Layer 12 Head 13: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,411 - WARNING - [VO] Layer 12 Head 14: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,411 - WARNING - [VO] Layer 12 Head 15: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,411 - WARNING - [VO] Layer 12 Head 16: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,411 - WARNING - [VO] Layer 12 Head 17: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,411 - WARNING - [VO] Layer 12 Head 18: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,412 - WARNING - [VO] Layer 12 Head 19: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,412 - WARNING - [VO] Layer 12 Head 20: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,412 - WARNING - [VO] Layer 12 Head 21: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,412 - WARNING - [VO] Layer 12 Head 22: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,412 - WARNING - [VO] Layer 12 Head 23: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,412 - WARNING - [VO] Layer 12 Head 24: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,412 - WARNING - [VO] Layer 12 Head 25: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,413 - WARNING - [VO] Layer 12 Head 26: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,413 - WARNING - [VO] Layer 12 Head 27: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,413 - WARNING - [VO] Layer 12 Head 28: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,413 - WARNING - [VO] Layer 12 Head 29: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,413 - WARNING - [VO] Layer 12 Head 30: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,413 - WARNING - [VO] Layer 12 Head 31: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,413 - INFO - [VO] Compressed layer 12 to rank 62 per head (λ=0.01)
+2025-05-04 08:16:03,442 - WARNING - [VO] Layer 13 Head 0: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,443 - WARNING - [VO] Layer 13 Head 1: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,443 - WARNING - [VO] Layer 13 Head 2: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,443 - WARNING - [VO] Layer 13 Head 3: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,443 - WARNING - [VO] Layer 13 Head 4: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,443 - WARNING - [VO] Layer 13 Head 5: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,443 - WARNING - [VO] Layer 13 Head 6: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,443 - WARNING - [VO] Layer 13 Head 7: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,444 - WARNING - [VO] Layer 13 Head 8: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,444 - WARNING - [VO] Layer 13 Head 9: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,444 - WARNING - [VO] Layer 13 Head 10: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,444 - WARNING - [VO] Layer 13 Head 11: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,444 - WARNING - [VO] Layer 13 Head 12: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,444 - WARNING - [VO] Layer 13 Head 13: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,444 - WARNING - [VO] Layer 13 Head 14: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,445 - WARNING - [VO] Layer 13 Head 15: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,445 - WARNING - [VO] Layer 13 Head 16: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,445 - WARNING - [VO] Layer 13 Head 17: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,445 - WARNING - [VO] Layer 13 Head 18: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,445 - WARNING - [VO] Layer 13 Head 19: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,445 - WARNING - [VO] Layer 13 Head 20: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,445 - WARNING - [VO] Layer 13 Head 21: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,446 - WARNING - [VO] Layer 13 Head 22: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,446 - WARNING - [VO] Layer 13 Head 23: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,446 - WARNING - [VO] Layer 13 Head 24: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,446 - WARNING - [VO] Layer 13 Head 25: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,446 - WARNING - [VO] Layer 13 Head 26: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,446 - WARNING - [VO] Layer 13 Head 27: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,447 - WARNING - [VO] Layer 13 Head 28: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,447 - WARNING - [VO] Layer 13 Head 29: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,447 - WARNING - [VO] Layer 13 Head 30: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,447 - WARNING - [VO] Layer 13 Head 31: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,447 - INFO - [VO] Compressed layer 13 to rank 62 per head (λ=0.01)
+2025-05-04 08:16:03,478 - WARNING - [VO] Layer 14 Head 0: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,478 - WARNING - [VO] Layer 14 Head 1: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,479 - WARNING - [VO] Layer 14 Head 2: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,479 - WARNING - [VO] Layer 14 Head 3: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,479 - WARNING - [VO] Layer 14 Head 4: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,479 - WARNING - [VO] Layer 14 Head 5: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,479 - WARNING - [VO] Layer 14 Head 6: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,479 - WARNING - [VO] Layer 14 Head 7: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,479 - WARNING - [VO] Layer 14 Head 8: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,480 - WARNING - [VO] Layer 14 Head 9: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,480 - WARNING - [VO] Layer 14 Head 10: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,480 - WARNING - [VO] Layer 14 Head 11: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,480 - WARNING - [VO] Layer 14 Head 12: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,480 - WARNING - [VO] Layer 14 Head 13: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,480 - WARNING - [VO] Layer 14 Head 14: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,481 - WARNING - [VO] Layer 14 Head 15: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,481 - WARNING - [VO] Layer 14 Head 16: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,481 - WARNING - [VO] Layer 14 Head 17: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,481 - WARNING - [VO] Layer 14 Head 18: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,481 - WARNING - [VO] Layer 14 Head 19: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,481 - WARNING - [VO] Layer 14 Head 20: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,481 - WARNING - [VO] Layer 14 Head 21: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,482 - WARNING - [VO] Layer 14 Head 22: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,482 - WARNING - [VO] Layer 14 Head 23: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,482 - WARNING - [VO] Layer 14 Head 24: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,482 - WARNING - [VO] Layer 14 Head 25: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,482 - WARNING - [VO] Layer 14 Head 26: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,482 - WARNING - [VO] Layer 14 Head 27: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,482 - WARNING - [VO] Layer 14 Head 28: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,483 - WARNING - [VO] Layer 14 Head 29: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,483 - WARNING - [VO] Layer 14 Head 30: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,483 - WARNING - [VO] Layer 14 Head 31: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,483 - INFO - [VO] Compressed layer 14 to rank 62 per head (λ=0.01)
+2025-05-04 08:16:03,513 - WARNING - [VO] Layer 15 Head 0: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,513 - WARNING - [VO] Layer 15 Head 1: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,513 - WARNING - [VO] Layer 15 Head 2: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,514 - WARNING - [VO] Layer 15 Head 3: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,514 - WARNING - [VO] Layer 15 Head 4: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,514 - WARNING - [VO] Layer 15 Head 5: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,514 - WARNING - [VO] Layer 15 Head 6: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,514 - WARNING - [VO] Layer 15 Head 7: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,514 - WARNING - [VO] Layer 15 Head 8: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,514 - WARNING - [VO] Layer 15 Head 9: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,515 - WARNING - [VO] Layer 15 Head 10: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,515 - WARNING - [VO] Layer 15 Head 11: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,515 - WARNING - [VO] Layer 15 Head 12: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,515 - WARNING - [VO] Layer 15 Head 13: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,515 - WARNING - [VO] Layer 15 Head 14: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,515 - WARNING - [VO] Layer 15 Head 15: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,516 - WARNING - [VO] Layer 15 Head 16: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,516 - WARNING - [VO] Layer 15 Head 17: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,516 - WARNING - [VO] Layer 15 Head 18: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,516 - WARNING - [VO] Layer 15 Head 19: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,516 - WARNING - [VO] Layer 15 Head 20: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,516 - WARNING - [VO] Layer 15 Head 21: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,516 - WARNING - [VO] Layer 15 Head 22: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,517 - WARNING - [VO] Layer 15 Head 23: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,517 - WARNING - [VO] Layer 15 Head 24: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,517 - WARNING - [VO] Layer 15 Head 25: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,517 - WARNING - [VO] Layer 15 Head 26: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,517 - WARNING - [VO] Layer 15 Head 27: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,517 - WARNING - [VO] Layer 15 Head 28: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,517 - WARNING - [VO] Layer 15 Head 29: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,518 - WARNING - [VO] Layer 15 Head 30: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,518 - WARNING - [VO] Layer 15 Head 31: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,518 - INFO - [VO] Compressed layer 15 to rank 62 per head (λ=0.01)
+2025-05-04 08:16:03,552 - WARNING - [VO] Layer 16 Head 0: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,553 - WARNING - [VO] Layer 16 Head 1: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,553 - WARNING - [VO] Layer 16 Head 2: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,553 - WARNING - [VO] Layer 16 Head 3: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,553 - WARNING - [VO] Layer 16 Head 4: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,553 - WARNING - [VO] Layer 16 Head 5: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,553 - WARNING - [VO] Layer 16 Head 6: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,554 - WARNING - [VO] Layer 16 Head 7: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,554 - WARNING - [VO] Layer 16 Head 8: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,554 - WARNING - [VO] Layer 16 Head 9: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,554 - WARNING - [VO] Layer 16 Head 10: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,554 - WARNING - [VO] Layer 16 Head 11: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,554 - WARNING - [VO] Layer 16 Head 12: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,554 - WARNING - [VO] Layer 16 Head 13: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,555 - WARNING - [VO] Layer 16 Head 14: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,555 - WARNING - [VO] Layer 16 Head 15: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,555 - WARNING - [VO] Layer 16 Head 16: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,555 - WARNING - [VO] Layer 16 Head 17: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,555 - WARNING - [VO] Layer 16 Head 18: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,555 - WARNING - [VO] Layer 16 Head 19: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,555 - WARNING - [VO] Layer 16 Head 20: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,556 - WARNING - [VO] Layer 16 Head 21: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,556 - WARNING - [VO] Layer 16 Head 22: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,556 - WARNING - [VO] Layer 16 Head 23: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,556 - WARNING - [VO] Layer 16 Head 24: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,556 - WARNING - [VO] Layer 16 Head 25: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,556 - WARNING - [VO] Layer 16 Head 26: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,556 - WARNING - [VO] Layer 16 Head 27: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,557 - WARNING - [VO] Layer 16 Head 28: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,557 - WARNING - [VO] Layer 16 Head 29: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,557 - WARNING - [VO] Layer 16 Head 30: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,557 - WARNING - [VO] Layer 16 Head 31: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,557 - INFO - [VO] Compressed layer 16 to rank 62 per head (λ=0.01)
+2025-05-04 08:16:03,588 - WARNING - [VO] Layer 17 Head 0: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,588 - WARNING - [VO] Layer 17 Head 1: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,589 - WARNING - [VO] Layer 17 Head 2: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,589 - WARNING - [VO] Layer 17 Head 3: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,589 - WARNING - [VO] Layer 17 Head 4: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,589 - WARNING - [VO] Layer 17 Head 5: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,589 - WARNING - [VO] Layer 17 Head 6: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,589 - WARNING - [VO] Layer 17 Head 7: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,589 - WARNING - [VO] Layer 17 Head 8: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,590 - WARNING - [VO] Layer 17 Head 9: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,590 - WARNING - [VO] Layer 17 Head 10: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,590 - WARNING - [VO] Layer 17 Head 11: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,590 - WARNING - [VO] Layer 17 Head 12: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,590 - WARNING - [VO] Layer 17 Head 13: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,590 - WARNING - [VO] Layer 17 Head 14: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,590 - WARNING - [VO] Layer 17 Head 15: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,591 - WARNING - [VO] Layer 17 Head 16: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,591 - WARNING - [VO] Layer 17 Head 17: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,591 - WARNING - [VO] Layer 17 Head 18: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,591 - WARNING - [VO] Layer 17 Head 19: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,591 - WARNING - [VO] Layer 17 Head 20: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,591 - WARNING - [VO] Layer 17 Head 21: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,591 - WARNING - [VO] Layer 17 Head 22: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,592 - WARNING - [VO] Layer 17 Head 23: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,592 - WARNING - [VO] Layer 17 Head 24: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,592 - WARNING - [VO] Layer 17 Head 25: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,592 - WARNING - [VO] Layer 17 Head 26: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,592 - WARNING - [VO] Layer 17 Head 27: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,592 - WARNING - [VO] Layer 17 Head 28: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,592 - WARNING - [VO] Layer 17 Head 29: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,593 - WARNING - [VO] Layer 17 Head 30: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,593 - WARNING - [VO] Layer 17 Head 31: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,593 - INFO - [VO] Compressed layer 17 to rank 63 per head (λ=0.01)
+2025-05-04 08:16:03,622 - WARNING - [VO] Layer 18 Head 0: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,623 - WARNING - [VO] Layer 18 Head 1: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,623 - WARNING - [VO] Layer 18 Head 2: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,623 - WARNING - [VO] Layer 18 Head 3: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,623 - WARNING - [VO] Layer 18 Head 4: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,623 - WARNING - [VO] Layer 18 Head 5: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,623 - WARNING - [VO] Layer 18 Head 6: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,624 - WARNING - [VO] Layer 18 Head 7: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,624 - WARNING - [VO] Layer 18 Head 8: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,624 - WARNING - [VO] Layer 18 Head 9: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,624 - WARNING - [VO] Layer 18 Head 10: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,624 - WARNING - [VO] Layer 18 Head 11: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,624 - WARNING - [VO] Layer 18 Head 12: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,624 - WARNING - [VO] Layer 18 Head 13: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,625 - WARNING - [VO] Layer 18 Head 14: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,625 - WARNING - [VO] Layer 18 Head 15: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,625 - WARNING - [VO] Layer 18 Head 16: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,625 - WARNING - [VO] Layer 18 Head 17: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,625 - WARNING - [VO] Layer 18 Head 18: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,625 - WARNING - [VO] Layer 18 Head 19: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,625 - WARNING - [VO] Layer 18 Head 20: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,626 - WARNING - [VO] Layer 18 Head 21: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,626 - WARNING - [VO] Layer 18 Head 22: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,626 - WARNING - [VO] Layer 18 Head 23: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,626 - WARNING - [VO] Layer 18 Head 24: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,626 - WARNING - [VO] Layer 18 Head 25: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,626 - WARNING - [VO] Layer 18 Head 26: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,626 - WARNING - [VO] Layer 18 Head 27: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,627 - WARNING - [VO] Layer 18 Head 28: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,627 - WARNING - [VO] Layer 18 Head 29: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,627 - WARNING - [VO] Layer 18 Head 30: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,627 - WARNING - [VO] Layer 18 Head 31: compression failed: The size of tensor a (63) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,627 - INFO - [VO] Compressed layer 18 to rank 63 per head (λ=0.01)
+2025-05-04 08:16:03,658 - WARNING - [VO] Layer 19 Head 0: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,658 - WARNING - [VO] Layer 19 Head 1: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,658 - WARNING - [VO] Layer 19 Head 2: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,658 - WARNING - [VO] Layer 19 Head 3: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,658 - WARNING - [VO] Layer 19 Head 4: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,658 - WARNING - [VO] Layer 19 Head 5: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,659 - WARNING - [VO] Layer 19 Head 6: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,659 - WARNING - [VO] Layer 19 Head 7: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,659 - WARNING - [VO] Layer 19 Head 8: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,659 - WARNING - [VO] Layer 19 Head 9: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,659 - WARNING - [VO] Layer 19 Head 10: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,659 - WARNING - [VO] Layer 19 Head 11: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,659 - WARNING - [VO] Layer 19 Head 12: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,660 - WARNING - [VO] Layer 19 Head 13: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,660 - WARNING - [VO] Layer 19 Head 14: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,660 - WARNING - [VO] Layer 19 Head 15: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,660 - WARNING - [VO] Layer 19 Head 16: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,660 - WARNING - [VO] Layer 19 Head 17: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,660 - WARNING - [VO] Layer 19 Head 18: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,660 - WARNING - [VO] Layer 19 Head 19: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,661 - WARNING - [VO] Layer 19 Head 20: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,661 - WARNING - [VO] Layer 19 Head 21: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,661 - WARNING - [VO] Layer 19 Head 22: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,661 - WARNING - [VO] Layer 19 Head 23: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,661 - WARNING - [VO] Layer 19 Head 24: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,661 - WARNING - [VO] Layer 19 Head 25: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,661 - WARNING - [VO] Layer 19 Head 26: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,662 - WARNING - [VO] Layer 19 Head 27: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,662 - WARNING - [VO] Layer 19 Head 28: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,662 - WARNING - [VO] Layer 19 Head 29: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,662 - WARNING - [VO] Layer 19 Head 30: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,662 - WARNING - [VO] Layer 19 Head 31: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,662 - INFO - [VO] Compressed layer 19 to rank 64 per head (λ=0.01)
+2025-05-04 08:16:03,692 - WARNING - [VO] Layer 20 Head 0: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,692 - WARNING - [VO] Layer 20 Head 1: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,693 - WARNING - [VO] Layer 20 Head 2: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,693 - WARNING - [VO] Layer 20 Head 3: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,693 - WARNING - [VO] Layer 20 Head 4: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,693 - WARNING - [VO] Layer 20 Head 5: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,693 - WARNING - [VO] Layer 20 Head 6: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,693 - WARNING - [VO] Layer 20 Head 7: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,693 - WARNING - [VO] Layer 20 Head 8: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,694 - WARNING - [VO] Layer 20 Head 9: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,694 - WARNING - [VO] Layer 20 Head 10: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,694 - WARNING - [VO] Layer 20 Head 11: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,694 - WARNING - [VO] Layer 20 Head 12: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,694 - WARNING - [VO] Layer 20 Head 13: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,694 - WARNING - [VO] Layer 20 Head 14: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,694 - WARNING - [VO] Layer 20 Head 15: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,695 - WARNING - [VO] Layer 20 Head 16: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,695 - WARNING - [VO] Layer 20 Head 17: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,695 - WARNING - [VO] Layer 20 Head 18: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,695 - WARNING - [VO] Layer 20 Head 19: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,695 - WARNING - [VO] Layer 20 Head 20: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,695 - WARNING - [VO] Layer 20 Head 21: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,695 - WARNING - [VO] Layer 20 Head 22: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,696 - WARNING - [VO] Layer 20 Head 23: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,696 - WARNING - [VO] Layer 20 Head 24: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,696 - WARNING - [VO] Layer 20 Head 25: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,696 - WARNING - [VO] Layer 20 Head 26: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,696 - WARNING - [VO] Layer 20 Head 27: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,696 - WARNING - [VO] Layer 20 Head 28: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,696 - WARNING - [VO] Layer 20 Head 29: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,697 - WARNING - [VO] Layer 20 Head 30: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,697 - WARNING - [VO] Layer 20 Head 31: compression failed: The size of tensor a (64) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,697 - INFO - [VO] Compressed layer 20 to rank 64 per head (λ=0.01)
+2025-05-04 08:16:03,728 - WARNING - [VO] Layer 21 Head 0: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,728 - WARNING - [VO] Layer 21 Head 1: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,728 - WARNING - [VO] Layer 21 Head 2: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,729 - WARNING - [VO] Layer 21 Head 3: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,729 - WARNING - [VO] Layer 21 Head 4: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,729 - WARNING - [VO] Layer 21 Head 5: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,729 - WARNING - [VO] Layer 21 Head 6: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,729 - WARNING - [VO] Layer 21 Head 7: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,729 - WARNING - [VO] Layer 21 Head 8: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,729 - WARNING - [VO] Layer 21 Head 9: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,730 - WARNING - [VO] Layer 21 Head 10: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,730 - WARNING - [VO] Layer 21 Head 11: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,730 - WARNING - [VO] Layer 21 Head 12: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,730 - WARNING - [VO] Layer 21 Head 13: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,730 - WARNING - [VO] Layer 21 Head 14: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,730 - WARNING - [VO] Layer 21 Head 15: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,730 - WARNING - [VO] Layer 21 Head 16: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,731 - WARNING - [VO] Layer 21 Head 17: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,731 - WARNING - [VO] Layer 21 Head 18: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,731 - WARNING - [VO] Layer 21 Head 19: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,731 - WARNING - [VO] Layer 21 Head 20: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,731 - WARNING - [VO] Layer 21 Head 21: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,731 - WARNING - [VO] Layer 21 Head 22: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,731 - WARNING - [VO] Layer 21 Head 23: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,732 - WARNING - [VO] Layer 21 Head 24: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,732 - WARNING - [VO] Layer 21 Head 25: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,732 - WARNING - [VO] Layer 21 Head 26: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,732 - WARNING - [VO] Layer 21 Head 27: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,732 - WARNING - [VO] Layer 21 Head 28: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,732 - WARNING - [VO] Layer 21 Head 29: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,732 - WARNING - [VO] Layer 21 Head 30: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,733 - WARNING - [VO] Layer 21 Head 31: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,733 - INFO - [VO] Compressed layer 21 to rank 65 per head (λ=0.01)
+2025-05-04 08:16:03,762 - WARNING - [VO] Layer 22 Head 0: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,762 - WARNING - [VO] Layer 22 Head 1: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,762 - WARNING - [VO] Layer 22 Head 2: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,762 - WARNING - [VO] Layer 22 Head 3: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,762 - WARNING - [VO] Layer 22 Head 4: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,763 - WARNING - [VO] Layer 22 Head 5: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,763 - WARNING - [VO] Layer 22 Head 6: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,763 - WARNING - [VO] Layer 22 Head 7: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,763 - WARNING - [VO] Layer 22 Head 8: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,763 - WARNING - [VO] Layer 22 Head 9: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,763 - WARNING - [VO] Layer 22 Head 10: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,763 - WARNING - [VO] Layer 22 Head 11: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,764 - WARNING - [VO] Layer 22 Head 12: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,764 - WARNING - [VO] Layer 22 Head 13: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,764 - WARNING - [VO] Layer 22 Head 14: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,764 - WARNING - [VO] Layer 22 Head 15: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,764 - WARNING - [VO] Layer 22 Head 16: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,764 - WARNING - [VO] Layer 22 Head 17: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,764 - WARNING - [VO] Layer 22 Head 18: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,765 - WARNING - [VO] Layer 22 Head 19: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,765 - WARNING - [VO] Layer 22 Head 20: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,765 - WARNING - [VO] Layer 22 Head 21: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,765 - WARNING - [VO] Layer 22 Head 22: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,765 - WARNING - [VO] Layer 22 Head 23: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,765 - WARNING - [VO] Layer 22 Head 24: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,765 - WARNING - [VO] Layer 22 Head 25: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,766 - WARNING - [VO] Layer 22 Head 26: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,766 - WARNING - [VO] Layer 22 Head 27: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,766 - WARNING - [VO] Layer 22 Head 28: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,766 - WARNING - [VO] Layer 22 Head 29: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,766 - WARNING - [VO] Layer 22 Head 30: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,766 - WARNING - [VO] Layer 22 Head 31: compression failed: The size of tensor a (65) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,766 - INFO - [VO] Compressed layer 22 to rank 65 per head (λ=0.01)
+2025-05-04 08:16:03,798 - WARNING - [VO] Layer 23 Head 0: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,798 - WARNING - [VO] Layer 23 Head 1: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,798 - WARNING - [VO] Layer 23 Head 2: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,799 - WARNING - [VO] Layer 23 Head 3: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,799 - WARNING - [VO] Layer 23 Head 4: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,799 - WARNING - [VO] Layer 23 Head 5: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,799 - WARNING - [VO] Layer 23 Head 6: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,799 - WARNING - [VO] Layer 23 Head 7: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,799 - WARNING - [VO] Layer 23 Head 8: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,800 - WARNING - [VO] Layer 23 Head 9: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,800 - WARNING - [VO] Layer 23 Head 10: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,800 - WARNING - [VO] Layer 23 Head 11: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,800 - WARNING - [VO] Layer 23 Head 12: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,800 - WARNING - [VO] Layer 23 Head 13: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,800 - WARNING - [VO] Layer 23 Head 14: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,800 - WARNING - [VO] Layer 23 Head 15: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,801 - WARNING - [VO] Layer 23 Head 16: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,801 - WARNING - [VO] Layer 23 Head 17: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,801 - WARNING - [VO] Layer 23 Head 18: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,801 - WARNING - [VO] Layer 23 Head 19: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,801 - WARNING - [VO] Layer 23 Head 20: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,801 - WARNING - [VO] Layer 23 Head 21: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,801 - WARNING - [VO] Layer 23 Head 22: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,802 - WARNING - [VO] Layer 23 Head 23: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,802 - WARNING - [VO] Layer 23 Head 24: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,802 - WARNING - [VO] Layer 23 Head 25: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,802 - WARNING - [VO] Layer 23 Head 26: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,802 - WARNING - [VO] Layer 23 Head 27: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,802 - WARNING - [VO] Layer 23 Head 28: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,802 - WARNING - [VO] Layer 23 Head 29: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,803 - WARNING - [VO] Layer 23 Head 30: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,803 - WARNING - [VO] Layer 23 Head 31: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,803 - INFO - [VO] Compressed layer 23 to rank 66 per head (λ=0.01)
+2025-05-04 08:16:03,838 - WARNING - [VO] Layer 24 Head 0: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,838 - WARNING - [VO] Layer 24 Head 1: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,838 - WARNING - [VO] Layer 24 Head 2: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,838 - WARNING - [VO] Layer 24 Head 3: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,839 - WARNING - [VO] Layer 24 Head 4: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,839 - WARNING - [VO] Layer 24 Head 5: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,839 - WARNING - [VO] Layer 24 Head 6: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,839 - WARNING - [VO] Layer 24 Head 7: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,839 - WARNING - [VO] Layer 24 Head 8: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,839 - WARNING - [VO] Layer 24 Head 9: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,839 - WARNING - [VO] Layer 24 Head 10: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,840 - WARNING - [VO] Layer 24 Head 11: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,840 - WARNING - [VO] Layer 24 Head 12: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,840 - WARNING - [VO] Layer 24 Head 13: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,840 - WARNING - [VO] Layer 24 Head 14: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,840 - WARNING - [VO] Layer 24 Head 15: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,840 - WARNING - [VO] Layer 24 Head 16: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,840 - WARNING - [VO] Layer 24 Head 17: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,841 - WARNING - [VO] Layer 24 Head 18: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,841 - WARNING - [VO] Layer 24 Head 19: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,841 - WARNING - [VO] Layer 24 Head 20: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,841 - WARNING - [VO] Layer 24 Head 21: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,841 - WARNING - [VO] Layer 24 Head 22: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,841 - WARNING - [VO] Layer 24 Head 23: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,841 - WARNING - [VO] Layer 24 Head 24: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,842 - WARNING - [VO] Layer 24 Head 25: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,842 - WARNING - [VO] Layer 24 Head 26: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,842 - WARNING - [VO] Layer 24 Head 27: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,842 - WARNING - [VO] Layer 24 Head 28: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,842 - WARNING - [VO] Layer 24 Head 29: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,842 - WARNING - [VO] Layer 24 Head 30: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,843 - WARNING - [VO] Layer 24 Head 31: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,843 - INFO - [VO] Compressed layer 24 to rank 66 per head (λ=0.01)
+2025-05-04 08:16:03,874 - WARNING - [VO] Layer 25 Head 0: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,874 - WARNING - [VO] Layer 25 Head 1: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,875 - WARNING - [VO] Layer 25 Head 2: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,875 - WARNING - [VO] Layer 25 Head 3: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,875 - WARNING - [VO] Layer 25 Head 4: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,875 - WARNING - [VO] Layer 25 Head 5: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,875 - WARNING - [VO] Layer 25 Head 6: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,875 - WARNING - [VO] Layer 25 Head 7: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,876 - WARNING - [VO] Layer 25 Head 8: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,876 - WARNING - [VO] Layer 25 Head 9: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,876 - WARNING - [VO] Layer 25 Head 10: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,876 - WARNING - [VO] Layer 25 Head 11: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,876 - WARNING - [VO] Layer 25 Head 12: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,876 - WARNING - [VO] Layer 25 Head 13: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,876 - WARNING - [VO] Layer 25 Head 14: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,877 - WARNING - [VO] Layer 25 Head 15: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,877 - WARNING - [VO] Layer 25 Head 16: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,877 - WARNING - [VO] Layer 25 Head 17: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,877 - WARNING - [VO] Layer 25 Head 18: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,877 - WARNING - [VO] Layer 25 Head 19: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,877 - WARNING - [VO] Layer 25 Head 20: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,877 - WARNING - [VO] Layer 25 Head 21: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,878 - WARNING - [VO] Layer 25 Head 22: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,878 - WARNING - [VO] Layer 25 Head 23: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,878 - WARNING - [VO] Layer 25 Head 24: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,878 - WARNING - [VO] Layer 25 Head 25: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,878 - WARNING - [VO] Layer 25 Head 26: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,878 - WARNING - [VO] Layer 25 Head 27: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,878 - WARNING - [VO] Layer 25 Head 28: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,879 - WARNING - [VO] Layer 25 Head 29: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,879 - WARNING - [VO] Layer 25 Head 30: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,879 - WARNING - [VO] Layer 25 Head 31: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,879 - INFO - [VO] Compressed layer 25 to rank 66 per head (λ=0.01)
+2025-05-04 08:16:03,909 - WARNING - [VO] Layer 26 Head 0: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,909 - WARNING - [VO] Layer 26 Head 1: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,909 - WARNING - [VO] Layer 26 Head 2: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,910 - WARNING - [VO] Layer 26 Head 3: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,910 - WARNING - [VO] Layer 26 Head 4: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,910 - WARNING - [VO] Layer 26 Head 5: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,910 - WARNING - [VO] Layer 26 Head 6: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,910 - WARNING - [VO] Layer 26 Head 7: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,910 - WARNING - [VO] Layer 26 Head 8: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,910 - WARNING - [VO] Layer 26 Head 9: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,911 - WARNING - [VO] Layer 26 Head 10: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,911 - WARNING - [VO] Layer 26 Head 11: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,911 - WARNING - [VO] Layer 26 Head 12: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,911 - WARNING - [VO] Layer 26 Head 13: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,911 - WARNING - [VO] Layer 26 Head 14: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,911 - WARNING - [VO] Layer 26 Head 15: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,911 - WARNING - [VO] Layer 26 Head 16: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,912 - WARNING - [VO] Layer 26 Head 17: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,912 - WARNING - [VO] Layer 26 Head 18: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,912 - WARNING - [VO] Layer 26 Head 19: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,912 - WARNING - [VO] Layer 26 Head 20: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,912 - WARNING - [VO] Layer 26 Head 21: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,912 - WARNING - [VO] Layer 26 Head 22: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,912 - WARNING - [VO] Layer 26 Head 23: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,913 - WARNING - [VO] Layer 26 Head 24: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,913 - WARNING - [VO] Layer 26 Head 25: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,913 - WARNING - [VO] Layer 26 Head 26: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,913 - WARNING - [VO] Layer 26 Head 27: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,913 - WARNING - [VO] Layer 26 Head 28: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,913 - WARNING - [VO] Layer 26 Head 29: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,913 - WARNING - [VO] Layer 26 Head 30: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,914 - WARNING - [VO] Layer 26 Head 31: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,914 - INFO - [VO] Compressed layer 26 to rank 66 per head (λ=0.01)
+2025-05-04 08:16:03,943 - WARNING - [VO] Layer 27 Head 0: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,944 - WARNING - [VO] Layer 27 Head 1: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,944 - WARNING - [VO] Layer 27 Head 2: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,944 - WARNING - [VO] Layer 27 Head 3: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,944 - WARNING - [VO] Layer 27 Head 4: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,944 - WARNING - [VO] Layer 27 Head 5: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,945 - WARNING - [VO] Layer 27 Head 6: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,945 - WARNING - [VO] Layer 27 Head 7: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,945 - WARNING - [VO] Layer 27 Head 8: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,945 - WARNING - [VO] Layer 27 Head 9: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,945 - WARNING - [VO] Layer 27 Head 10: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,945 - WARNING - [VO] Layer 27 Head 11: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,945 - WARNING - [VO] Layer 27 Head 12: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,946 - WARNING - [VO] Layer 27 Head 13: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,946 - WARNING - [VO] Layer 27 Head 14: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,946 - WARNING - [VO] Layer 27 Head 15: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,946 - WARNING - [VO] Layer 27 Head 16: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,946 - WARNING - [VO] Layer 27 Head 17: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,946 - WARNING - [VO] Layer 27 Head 18: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,946 - WARNING - [VO] Layer 27 Head 19: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,947 - WARNING - [VO] Layer 27 Head 20: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,947 - WARNING - [VO] Layer 27 Head 21: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,947 - WARNING - [VO] Layer 27 Head 22: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,947 - WARNING - [VO] Layer 27 Head 23: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,947 - WARNING - [VO] Layer 27 Head 24: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,947 - WARNING - [VO] Layer 27 Head 25: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,947 - WARNING - [VO] Layer 27 Head 26: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,948 - WARNING - [VO] Layer 27 Head 27: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,948 - WARNING - [VO] Layer 27 Head 28: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,948 - WARNING - [VO] Layer 27 Head 29: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,948 - WARNING - [VO] Layer 27 Head 30: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,948 - WARNING - [VO] Layer 27 Head 31: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,948 - INFO - [VO] Compressed layer 27 to rank 66 per head (λ=0.01)
+2025-05-04 08:16:03,979 - WARNING - [VO] Layer 28 Head 0: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,979 - WARNING - [VO] Layer 28 Head 1: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,979 - WARNING - [VO] Layer 28 Head 2: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,979 - WARNING - [VO] Layer 28 Head 3: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,979 - WARNING - [VO] Layer 28 Head 4: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,979 - WARNING - [VO] Layer 28 Head 5: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,980 - WARNING - [VO] Layer 28 Head 6: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,980 - WARNING - [VO] Layer 28 Head 7: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,980 - WARNING - [VO] Layer 28 Head 8: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,980 - WARNING - [VO] Layer 28 Head 9: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,980 - WARNING - [VO] Layer 28 Head 10: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,980 - WARNING - [VO] Layer 28 Head 11: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,980 - WARNING - [VO] Layer 28 Head 12: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,981 - WARNING - [VO] Layer 28 Head 13: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,981 - WARNING - [VO] Layer 28 Head 14: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,981 - WARNING - [VO] Layer 28 Head 15: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,981 - WARNING - [VO] Layer 28 Head 16: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,981 - WARNING - [VO] Layer 28 Head 17: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,981 - WARNING - [VO] Layer 28 Head 18: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,982 - WARNING - [VO] Layer 28 Head 19: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,982 - WARNING - [VO] Layer 28 Head 20: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,982 - WARNING - [VO] Layer 28 Head 21: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,982 - WARNING - [VO] Layer 28 Head 22: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,982 - WARNING - [VO] Layer 28 Head 23: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,982 - WARNING - [VO] Layer 28 Head 24: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,982 - WARNING - [VO] Layer 28 Head 25: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,983 - WARNING - [VO] Layer 28 Head 26: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,983 - WARNING - [VO] Layer 28 Head 27: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,983 - WARNING - [VO] Layer 28 Head 28: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,983 - WARNING - [VO] Layer 28 Head 29: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,983 - WARNING - [VO] Layer 28 Head 30: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,983 - WARNING - [VO] Layer 28 Head 31: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:03,983 - INFO - [VO] Compressed layer 28 to rank 66 per head (λ=0.01)
+2025-05-04 08:16:04,013 - WARNING - [VO] Layer 29 Head 0: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,014 - WARNING - [VO] Layer 29 Head 1: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,014 - WARNING - [VO] Layer 29 Head 2: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,014 - WARNING - [VO] Layer 29 Head 3: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,014 - WARNING - [VO] Layer 29 Head 4: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,014 - WARNING - [VO] Layer 29 Head 5: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,014 - WARNING - [VO] Layer 29 Head 6: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,015 - WARNING - [VO] Layer 29 Head 7: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,015 - WARNING - [VO] Layer 29 Head 8: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,015 - WARNING - [VO] Layer 29 Head 9: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,015 - WARNING - [VO] Layer 29 Head 10: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,015 - WARNING - [VO] Layer 29 Head 11: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,015 - WARNING - [VO] Layer 29 Head 12: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,015 - WARNING - [VO] Layer 29 Head 13: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,016 - WARNING - [VO] Layer 29 Head 14: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,016 - WARNING - [VO] Layer 29 Head 15: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,016 - WARNING - [VO] Layer 29 Head 16: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,016 - WARNING - [VO] Layer 29 Head 17: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,016 - WARNING - [VO] Layer 29 Head 18: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,016 - WARNING - [VO] Layer 29 Head 19: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,016 - WARNING - [VO] Layer 29 Head 20: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,017 - WARNING - [VO] Layer 29 Head 21: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,017 - WARNING - [VO] Layer 29 Head 22: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,017 - WARNING - [VO] Layer 29 Head 23: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,017 - WARNING - [VO] Layer 29 Head 24: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,017 - WARNING - [VO] Layer 29 Head 25: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,017 - WARNING - [VO] Layer 29 Head 26: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,017 - WARNING - [VO] Layer 29 Head 27: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,018 - WARNING - [VO] Layer 29 Head 28: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,018 - WARNING - [VO] Layer 29 Head 29: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,018 - WARNING - [VO] Layer 29 Head 30: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,018 - WARNING - [VO] Layer 29 Head 31: compression failed: The size of tensor a (66) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,018 - INFO - [VO] Compressed layer 29 to rank 66 per head (λ=0.01)
+2025-05-04 08:16:04,049 - WARNING - [VO] Layer 30 Head 0: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,049 - WARNING - [VO] Layer 30 Head 1: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,049 - WARNING - [VO] Layer 30 Head 2: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,049 - WARNING - [VO] Layer 30 Head 3: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,050 - WARNING - [VO] Layer 30 Head 4: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,050 - WARNING - [VO] Layer 30 Head 5: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,050 - WARNING - [VO] Layer 30 Head 6: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,050 - WARNING - [VO] Layer 30 Head 7: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,050 - WARNING - [VO] Layer 30 Head 8: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,050 - WARNING - [VO] Layer 30 Head 9: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,051 - WARNING - [VO] Layer 30 Head 10: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,051 - WARNING - [VO] Layer 30 Head 11: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,051 - WARNING - [VO] Layer 30 Head 12: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,051 - WARNING - [VO] Layer 30 Head 13: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,051 - WARNING - [VO] Layer 30 Head 14: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,051 - WARNING - [VO] Layer 30 Head 15: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,051 - WARNING - [VO] Layer 30 Head 16: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,052 - WARNING - [VO] Layer 30 Head 17: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,052 - WARNING - [VO] Layer 30 Head 18: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,052 - WARNING - [VO] Layer 30 Head 19: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,052 - WARNING - [VO] Layer 30 Head 20: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,052 - WARNING - [VO] Layer 30 Head 21: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,052 - WARNING - [VO] Layer 30 Head 22: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,052 - WARNING - [VO] Layer 30 Head 23: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,053 - WARNING - [VO] Layer 30 Head 24: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,053 - WARNING - [VO] Layer 30 Head 25: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,053 - WARNING - [VO] Layer 30 Head 26: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,053 - WARNING - [VO] Layer 30 Head 27: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,053 - WARNING - [VO] Layer 30 Head 28: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,053 - WARNING - [VO] Layer 30 Head 29: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,053 - WARNING - [VO] Layer 30 Head 30: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,054 - WARNING - [VO] Layer 30 Head 31: compression failed: The size of tensor a (62) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,054 - INFO - [VO] Compressed layer 30 to rank 62 per head (λ=0.01)
+2025-05-04 08:16:04,083 - WARNING - [VO] Layer 31 Head 0: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,084 - WARNING - [VO] Layer 31 Head 1: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,084 - WARNING - [VO] Layer 31 Head 2: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,084 - WARNING - [VO] Layer 31 Head 3: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,084 - WARNING - [VO] Layer 31 Head 4: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,084 - WARNING - [VO] Layer 31 Head 5: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,085 - WARNING - [VO] Layer 31 Head 6: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,085 - WARNING - [VO] Layer 31 Head 7: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,085 - WARNING - [VO] Layer 31 Head 8: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,085 - WARNING - [VO] Layer 31 Head 9: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,085 - WARNING - [VO] Layer 31 Head 10: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,085 - WARNING - [VO] Layer 31 Head 11: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,085 - WARNING - [VO] Layer 31 Head 12: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,086 - WARNING - [VO] Layer 31 Head 13: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,086 - WARNING - [VO] Layer 31 Head 14: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,086 - WARNING - [VO] Layer 31 Head 15: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,086 - WARNING - [VO] Layer 31 Head 16: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,086 - WARNING - [VO] Layer 31 Head 17: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,086 - WARNING - [VO] Layer 31 Head 18: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,086 - WARNING - [VO] Layer 31 Head 19: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,087 - WARNING - [VO] Layer 31 Head 20: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,087 - WARNING - [VO] Layer 31 Head 21: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,087 - WARNING - [VO] Layer 31 Head 22: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,087 - WARNING - [VO] Layer 31 Head 23: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,087 - WARNING - [VO] Layer 31 Head 24: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,087 - WARNING - [VO] Layer 31 Head 25: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,087 - WARNING - [VO] Layer 31 Head 26: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,088 - WARNING - [VO] Layer 31 Head 27: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,088 - WARNING - [VO] Layer 31 Head 28: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,088 - WARNING - [VO] Layer 31 Head 29: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,088 - WARNING - [VO] Layer 31 Head 30: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,088 - WARNING - [VO] Layer 31 Head 31: compression failed: The size of tensor a (45) must match the size of tensor b (128) at non-singleton dimension 1
+2025-05-04 08:16:04,088 - INFO - [VO] Compressed layer 31 to rank 45 per head (λ=0.01)
+2025-05-04 08:16:04,088 - INFO - Saving compressed model...
+2025-05-04 08:18:11,633 - INFO - ✔ Model, tokenizer, and tokenizer_source.txt saved to /u/scratch/x/xxiong/compressed_output/llama2-7b
+2025-05-04 08:18:11,638 - INFO - Reloading compressed model for evaluation...
+2025-05-04 08:18:11,639 - INFO - Reloading compressed model from: /u/scratch/x/xxiong/compressed_output/llama2-7b
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  5.79it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  6.06it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  6.06it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  6.03it/s]
+2025-05-04 08:18:17,907 - INFO - ✔ Reloaded compressed model to cuda:0 successfully.
+2025-05-04 08:19:14,874 - INFO - Compressed model perplexity on WikiText2: 6.50

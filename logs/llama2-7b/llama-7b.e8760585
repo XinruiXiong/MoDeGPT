@@ -1,0 +1,50 @@
+2025-05-04 04:25:57,560 - INFO - Loading model: meta-llama/Llama-2-7b-hf
+2025-05-04 04:25:57,560 - INFO - Loading model from: meta-llama/Llama-2-7b-hf
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  9.42it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 11.12it/s]
+2025-05-04 04:26:07,643 - INFO - ✔ Loaded model on cuda:0 with float16.
+2025-05-04 04:26:07,644 - INFO - No pad_token found. Set pad_token = eos_token.
+2025-05-04 04:26:07,645 - INFO - Loading calibration and evaluation texts...
+2025-05-04 04:26:21,731 - INFO - Evaluating original model (for baseline perplexity)...
+2025-05-04 04:26:49,744 - INFO - Original model perplexity on WikiText2: 5.72
+2025-05-04 04:26:49,745 - INFO - Calibrating model...
+2025-05-04 04:26:49,745 - INFO - Detected architecture: llama
+2025-05-04 04:29:43,352 - INFO - Finished calibration and computed BI scores.
+2025-05-04 04:29:43,356 - INFO - Allocating layer sparsity...
+2025-05-04 04:29:43,356 - INFO - Allocating global sparsity using target keep ratio 0.5000 and temperature 1.0
+2025-05-04 04:29:43,356 - INFO - Layer  0: keep_ratio = 1.0000 (BI = 0.4532)
+2025-05-04 04:29:43,356 - INFO - Layer  1: keep_ratio = 0.3774 (BI = 0.3471)
+2025-05-04 04:29:43,356 - INFO - Layer  2: keep_ratio = 0.4513 (BI = 0.1683)
+2025-05-04 04:29:43,356 - INFO - Layer  3: keep_ratio = 0.4585 (BI = 0.1526)
+2025-05-04 04:29:43,356 - INFO - Layer  4: keep_ratio = 0.4563 (BI = 0.1575)
+2025-05-04 04:29:43,356 - INFO - Layer  5: keep_ratio = 0.4629 (BI = 0.1431)
+2025-05-04 04:29:43,356 - INFO - Layer  6: keep_ratio = 0.4640 (BI = 0.1407)
+2025-05-04 04:29:43,357 - INFO - Layer  7: keep_ratio = 0.4671 (BI = 0.1339)
+2025-05-04 04:29:43,357 - INFO - Layer  8: keep_ratio = 0.4736 (BI = 0.1201)
+2025-05-04 04:29:43,357 - INFO - Layer  9: keep_ratio = 0.4782 (BI = 0.1105)
+2025-05-04 04:29:43,357 - INFO - Layer 10: keep_ratio = 0.4819 (BI = 0.1027)
+2025-05-04 04:29:43,357 - INFO - Layer 11: keep_ratio = 0.4873 (BI = 0.0916)
+2025-05-04 04:29:43,357 - INFO - Layer 12: keep_ratio = 0.4869 (BI = 0.0925)
+2025-05-04 04:29:43,357 - INFO - Layer 13: keep_ratio = 0.4864 (BI = 0.0936)
+2025-05-04 04:29:43,357 - INFO - Layer 14: keep_ratio = 0.4904 (BI = 0.0853)
+2025-05-04 04:29:43,357 - INFO - Layer 15: keep_ratio = 0.4856 (BI = 0.0952)
+2025-05-04 04:29:43,357 - INFO - Layer 16: keep_ratio = 0.4893 (BI = 0.0876)
+2025-05-04 04:29:43,357 - INFO - Layer 17: keep_ratio = 0.4964 (BI = 0.0731)
+2025-05-04 04:29:43,357 - INFO - Layer 18: keep_ratio = 0.4998 (BI = 0.0663)
+2025-05-04 04:29:43,357 - INFO - Layer 19: keep_ratio = 0.5058 (BI = 0.0543)
+2025-05-04 04:29:43,357 - INFO - Layer 20: keep_ratio = 0.5073 (BI = 0.0514)
+2025-05-04 04:29:43,357 - INFO - Layer 21: keep_ratio = 0.5130 (BI = 0.0403)
+2025-05-04 04:29:43,357 - INFO - Layer 22: keep_ratio = 0.5135 (BI = 0.0393)
+2025-05-04 04:29:43,357 - INFO - Layer 23: keep_ratio = 0.5170 (BI = 0.0324)
+2025-05-04 04:29:43,357 - INFO - Layer 24: keep_ratio = 0.5174 (BI = 0.0317)
+2025-05-04 04:29:43,357 - INFO - Layer 25: keep_ratio = 0.5174 (BI = 0.0317)
+2025-05-04 04:29:43,357 - INFO - Layer 26: keep_ratio = 0.5186 (BI = 0.0295)
+2025-05-04 04:29:43,357 - INFO - Layer 27: keep_ratio = 0.5191 (BI = 0.0284)
+2025-05-04 04:29:43,357 - INFO - Layer 28: keep_ratio = 0.5180 (BI = 0.0306)
+2025-05-04 04:29:43,357 - INFO - Layer 29: keep_ratio = 0.5170 (BI = 0.0326)
+2025-05-04 04:29:43,357 - INFO - Layer 30: keep_ratio = 0.4886 (BI = 0.0890)
+2025-05-04 04:29:43,357 - INFO - Layer 31: keep_ratio = 0.3540 (BI = 0.4112)
+2025-05-04 04:29:43,357 - INFO - Freeing original model from GPU before compression...
+2025-05-04 04:29:47,354 - INFO - n_layers=32, n_heads=32, d_model=4096, head_dim=128
+2025-05-04 04:29:47,355 - INFO - Applying MoDeGPT compression methods...
+2025-05-04 04:30:22,419 - INFO - [MLP] Compressed layer 0 to rank 11008 (Nyström, λ=0.01)
+2025-05-04 04:30:25,674 - INFO - [MLP] Compressed layer 1 to rank 4154 (Nyström, λ=0.01)

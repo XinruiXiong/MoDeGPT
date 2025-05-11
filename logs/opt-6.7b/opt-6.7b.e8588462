@@ -1,0 +1,16 @@
+2025-05-01 21:24:57,980 - INFO - Loading model: facebook/opt-6.7b
+2025-05-01 21:24:57,981 - INFO - Loading model from: facebook/opt-6.7b
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.94it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.46it/s]
+2025-05-01 21:25:02,817 - ERROR - [Error] Failed to load model facebook/opt-6.7b: Invalid device string: 'cuda:cuda'
+Traceback (most recent call last):
+  File "/u/home/x/xxiong/MoDeGPT/run_modegpt.py", line 354, in <module>
+    main()
+  File "/u/home/x/xxiong/MoDeGPT/run_modegpt.py", line 236, in main
+    model, tokenizer, config = load_model(args.model, device=device)
+  File "/u/home/x/xxiong/MoDeGPT/model_utils.py", line 166, in load_model
+    model.to(f"cuda:{device}")
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2724, in to
+    return super().to(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1302, in to
+    device, dtype, non_blocking, convert_to_format = torch._C._nn._parse_to(
+RuntimeError: Invalid device string: 'cuda:cuda'

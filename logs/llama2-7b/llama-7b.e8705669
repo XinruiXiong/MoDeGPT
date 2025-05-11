@@ -1,0 +1,151 @@
+2025-05-03 05:06:33,556 - INFO - Loading model: meta-llama/Llama-2-7b-hf
+2025-05-03 05:06:33,556 - INFO - Loading model from: meta-llama/Llama-2-7b-hf
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.96it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  9.53it/s]
+2025-05-03 05:06:44,930 - INFO - ✔ Loaded model on cuda:0 with float16.
+2025-05-03 05:06:44,932 - INFO - No pad_token found. Set pad_token = eos_token.
+2025-05-03 05:06:44,933 - INFO - Loading calibration and evaluation texts...
+2025-05-03 05:06:57,484 - INFO - Evaluating original model (for baseline perplexity)...
+2025-05-03 05:07:57,213 - INFO - Original model perplexity on WikiText2: 5.72
+2025-05-03 05:07:57,215 - INFO - Calibrating model...
+2025-05-03 05:07:57,215 - INFO - Detected architecture: llama
+2025-05-03 05:12:16,977 - INFO - Finished calibration and computed BI scores.
+2025-05-03 05:12:16,981 - INFO - Allocating layer sparsity...
+2025-05-03 05:12:16,981 - INFO - Allocating global sparsity using target keep ratio 0.5000 and temperature 1.0
+2025-05-03 05:12:16,982 - INFO - Layer  0: keep_ratio = 1.0000 (BI = 0.4532)
+2025-05-03 05:12:16,982 - INFO - Layer  1: keep_ratio = 0.3774 (BI = 0.3471)
+2025-05-03 05:12:16,982 - INFO - Layer  2: keep_ratio = 0.4513 (BI = 0.1683)
+2025-05-03 05:12:16,982 - INFO - Layer  3: keep_ratio = 0.4585 (BI = 0.1526)
+2025-05-03 05:12:16,982 - INFO - Layer  4: keep_ratio = 0.4563 (BI = 0.1575)
+2025-05-03 05:12:16,982 - INFO - Layer  5: keep_ratio = 0.4629 (BI = 0.1431)
+2025-05-03 05:12:16,982 - INFO - Layer  6: keep_ratio = 0.4640 (BI = 0.1407)
+2025-05-03 05:12:16,982 - INFO - Layer  7: keep_ratio = 0.4671 (BI = 0.1339)
+2025-05-03 05:12:16,982 - INFO - Layer  8: keep_ratio = 0.4736 (BI = 0.1201)
+2025-05-03 05:12:16,982 - INFO - Layer  9: keep_ratio = 0.4782 (BI = 0.1105)
+2025-05-03 05:12:16,982 - INFO - Layer 10: keep_ratio = 0.4819 (BI = 0.1027)
+2025-05-03 05:12:16,982 - INFO - Layer 11: keep_ratio = 0.4873 (BI = 0.0916)
+2025-05-03 05:12:16,982 - INFO - Layer 12: keep_ratio = 0.4869 (BI = 0.0925)
+2025-05-03 05:12:16,982 - INFO - Layer 13: keep_ratio = 0.4864 (BI = 0.0936)
+2025-05-03 05:12:16,982 - INFO - Layer 14: keep_ratio = 0.4904 (BI = 0.0853)
+2025-05-03 05:12:16,982 - INFO - Layer 15: keep_ratio = 0.4856 (BI = 0.0952)
+2025-05-03 05:12:16,982 - INFO - Layer 16: keep_ratio = 0.4893 (BI = 0.0876)
+2025-05-03 05:12:16,982 - INFO - Layer 17: keep_ratio = 0.4964 (BI = 0.0731)
+2025-05-03 05:12:16,982 - INFO - Layer 18: keep_ratio = 0.4998 (BI = 0.0663)
+2025-05-03 05:12:16,982 - INFO - Layer 19: keep_ratio = 0.5058 (BI = 0.0543)
+2025-05-03 05:12:16,982 - INFO - Layer 20: keep_ratio = 0.5073 (BI = 0.0514)
+2025-05-03 05:12:16,982 - INFO - Layer 21: keep_ratio = 0.5130 (BI = 0.0403)
+2025-05-03 05:12:16,982 - INFO - Layer 22: keep_ratio = 0.5135 (BI = 0.0393)
+2025-05-03 05:12:16,982 - INFO - Layer 23: keep_ratio = 0.5170 (BI = 0.0324)
+2025-05-03 05:12:16,982 - INFO - Layer 24: keep_ratio = 0.5174 (BI = 0.0317)
+2025-05-03 05:12:16,982 - INFO - Layer 25: keep_ratio = 0.5174 (BI = 0.0317)
+2025-05-03 05:12:16,982 - INFO - Layer 26: keep_ratio = 0.5186 (BI = 0.0295)
+2025-05-03 05:12:16,982 - INFO - Layer 27: keep_ratio = 0.5191 (BI = 0.0284)
+2025-05-03 05:12:16,982 - INFO - Layer 28: keep_ratio = 0.5180 (BI = 0.0306)
+2025-05-03 05:12:16,982 - INFO - Layer 29: keep_ratio = 0.5170 (BI = 0.0326)
+2025-05-03 05:12:16,982 - INFO - Layer 30: keep_ratio = 0.4886 (BI = 0.0890)
+2025-05-03 05:12:16,982 - INFO - Layer 31: keep_ratio = 0.3540 (BI = 0.4112)
+2025-05-03 05:12:16,982 - INFO - Freeing original model from GPU before compression...
+2025-05-03 05:12:19,417 - INFO - n_layers=32, n_heads=32, d_model=4096, head_dim=128
+2025-05-03 05:12:19,417 - INFO - Applying MoDeGPT compression methods...
+2025-05-03 05:13:49,251 - INFO - [MLP] Compressed layer 0 to rank 11008 (Nyström, λ=0.01)
+2025-05-03 05:14:08,513 - INFO - [MLP] Compressed layer 1 to rank 4154 (Nyström, λ=0.01)
+2025-05-03 05:14:30,863 - INFO - [MLP] Compressed layer 2 to rank 4968 (Nyström, λ=0.01)
+2025-05-03 05:14:53,237 - INFO - [MLP] Compressed layer 3 to rank 5046 (Nyström, λ=0.01)
+2025-05-03 05:15:14,916 - INFO - [MLP] Compressed layer 4 to rank 5022 (Nyström, λ=0.01)
+2025-05-03 05:15:37,468 - INFO - [MLP] Compressed layer 5 to rank 5095 (Nyström, λ=0.01)
+2025-05-03 05:16:00,246 - INFO - [MLP] Compressed layer 6 to rank 5107 (Nyström, λ=0.01)
+2025-05-03 05:16:22,749 - INFO - [MLP] Compressed layer 7 to rank 5142 (Nyström, λ=0.01)
+2025-05-03 05:16:45,921 - INFO - [MLP] Compressed layer 8 to rank 5213 (Nyström, λ=0.01)
+2025-05-03 05:17:08,279 - INFO - [MLP] Compressed layer 9 to rank 5264 (Nyström, λ=0.01)
+2025-05-03 05:17:32,182 - INFO - [MLP] Compressed layer 10 to rank 5305 (Nyström, λ=0.01)
+2025-05-03 05:17:56,208 - INFO - [MLP] Compressed layer 11 to rank 5364 (Nyström, λ=0.01)
+2025-05-03 05:18:20,292 - INFO - [MLP] Compressed layer 12 to rank 5359 (Nyström, λ=0.01)
+2025-05-03 05:18:43,987 - INFO - [MLP] Compressed layer 13 to rank 5354 (Nyström, λ=0.01)
+2025-05-03 05:19:08,433 - INFO - [MLP] Compressed layer 14 to rank 5398 (Nyström, λ=0.01)
+2025-05-03 05:19:32,627 - INFO - [MLP] Compressed layer 15 to rank 5345 (Nyström, λ=0.01)
+2025-05-03 05:19:56,863 - INFO - [MLP] Compressed layer 16 to rank 5385 (Nyström, λ=0.01)
+2025-05-03 05:20:21,286 - INFO - [MLP] Compressed layer 17 to rank 5464 (Nyström, λ=0.01)
+2025-05-03 05:20:46,462 - INFO - [MLP] Compressed layer 18 to rank 5502 (Nyström, λ=0.01)
+2025-05-03 05:21:11,081 - INFO - [MLP] Compressed layer 19 to rank 5568 (Nyström, λ=0.01)
+2025-05-03 05:21:36,307 - INFO - [MLP] Compressed layer 20 to rank 5584 (Nyström, λ=0.01)
+2025-05-03 05:22:02,646 - INFO - [MLP] Compressed layer 21 to rank 5646 (Nyström, λ=0.01)
+2025-05-03 05:22:28,160 - INFO - [MLP] Compressed layer 22 to rank 5652 (Nyström, λ=0.01)
+2025-05-03 05:22:54,267 - INFO - [MLP] Compressed layer 23 to rank 5691 (Nyström, λ=0.01)
+2025-05-03 05:23:21,094 - INFO - [MLP] Compressed layer 24 to rank 5695 (Nyström, λ=0.01)
+2025-05-03 05:23:47,193 - INFO - [MLP] Compressed layer 25 to rank 5695 (Nyström, λ=0.01)
+2025-05-03 05:24:12,879 - INFO - [MLP] Compressed layer 26 to rank 5708 (Nyström, λ=0.01)
+2025-05-03 05:24:38,772 - INFO - [MLP] Compressed layer 27 to rank 5714 (Nyström, λ=0.01)
+2025-05-03 05:25:05,513 - INFO - [MLP] Compressed layer 28 to rank 5701 (Nyström, λ=0.01)
+2025-05-03 05:25:30,973 - INFO - [MLP] Compressed layer 29 to rank 5690 (Nyström, λ=0.01)
+2025-05-03 05:25:56,309 - INFO - [MLP] Compressed layer 30 to rank 5378 (Nyström, λ=0.01)
+2025-05-03 05:26:14,164 - INFO - [MLP] Compressed layer 31 to rank 3896 (Nyström, λ=0.01)
+2025-05-03 05:26:23,882 - INFO - [QK] Compressed layer 0 to rank 128 per head (ridge λ=0.01)
+2025-05-03 05:26:33,369 - INFO - [QK] Compressed layer 1 to rank 48 per head (ridge λ=0.01)
+2025-05-03 05:26:42,929 - INFO - [QK] Compressed layer 2 to rank 57 per head (ridge λ=0.01)
+2025-05-03 05:26:52,451 - INFO - [QK] Compressed layer 3 to rank 58 per head (ridge λ=0.01)
+2025-05-03 05:27:01,980 - INFO - [QK] Compressed layer 4 to rank 58 per head (ridge λ=0.01)
+2025-05-03 05:27:11,507 - INFO - [QK] Compressed layer 5 to rank 59 per head (ridge λ=0.01)
+2025-05-03 05:27:21,023 - INFO - [QK] Compressed layer 6 to rank 59 per head (ridge λ=0.01)
+2025-05-03 05:27:30,544 - INFO - [QK] Compressed layer 7 to rank 59 per head (ridge λ=0.01)
+2025-05-03 05:27:40,066 - INFO - [QK] Compressed layer 8 to rank 60 per head (ridge λ=0.01)
+2025-05-03 05:27:49,594 - INFO - [QK] Compressed layer 9 to rank 61 per head (ridge λ=0.01)
+2025-05-03 05:27:59,113 - INFO - [QK] Compressed layer 10 to rank 61 per head (ridge λ=0.01)
+2025-05-03 05:28:08,641 - INFO - [QK] Compressed layer 11 to rank 62 per head (ridge λ=0.01)
+2025-05-03 05:28:18,169 - INFO - [QK] Compressed layer 12 to rank 62 per head (ridge λ=0.01)
+2025-05-03 05:28:27,697 - INFO - [QK] Compressed layer 13 to rank 62 per head (ridge λ=0.01)
+2025-05-03 05:28:37,221 - INFO - [QK] Compressed layer 14 to rank 62 per head (ridge λ=0.01)
+2025-05-03 05:28:46,751 - INFO - [QK] Compressed layer 15 to rank 62 per head (ridge λ=0.01)
+2025-05-03 05:28:56,282 - INFO - [QK] Compressed layer 16 to rank 62 per head (ridge λ=0.01)
+2025-05-03 05:29:05,814 - INFO - [QK] Compressed layer 17 to rank 63 per head (ridge λ=0.01)
+2025-05-03 05:29:15,355 - INFO - [QK] Compressed layer 18 to rank 63 per head (ridge λ=0.01)
+2025-05-03 05:29:24,874 - INFO - [QK] Compressed layer 19 to rank 64 per head (ridge λ=0.01)
+2025-05-03 05:29:34,403 - INFO - [QK] Compressed layer 20 to rank 64 per head (ridge λ=0.01)
+2025-05-03 05:29:43,982 - INFO - [QK] Compressed layer 21 to rank 65 per head (ridge λ=0.01)
+2025-05-03 05:29:53,529 - INFO - [QK] Compressed layer 22 to rank 65 per head (ridge λ=0.01)
+2025-05-03 05:30:03,083 - INFO - [QK] Compressed layer 23 to rank 66 per head (ridge λ=0.01)
+2025-05-03 05:30:12,661 - INFO - [QK] Compressed layer 24 to rank 66 per head (ridge λ=0.01)
+2025-05-03 05:30:22,219 - INFO - [QK] Compressed layer 25 to rank 66 per head (ridge λ=0.01)
+2025-05-03 05:30:31,780 - INFO - [QK] Compressed layer 26 to rank 66 per head (ridge λ=0.01)
+2025-05-03 05:30:41,348 - INFO - [QK] Compressed layer 27 to rank 66 per head (ridge λ=0.01)
+2025-05-03 05:30:49,475 - INFO - [QK] Compressed layer 28 to rank 66 per head (ridge λ=0.01)
+2025-05-03 05:30:55,850 - INFO - [QK] Compressed layer 29 to rank 66 per head (ridge λ=0.01)
+2025-05-03 05:31:02,207 - INFO - [QK] Compressed layer 30 to rank 62 per head (ridge λ=0.01)
+2025-05-03 05:31:08,824 - INFO - [QK] Compressed layer 31 to rank 45 per head (ridge λ=0.01)
+2025-05-03 05:31:08,829 - WARNING - [VO] Compression failed at layer 0: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,830 - WARNING - [VO] Compression failed at layer 1: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,831 - WARNING - [VO] Compression failed at layer 2: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,831 - WARNING - [VO] Compression failed at layer 3: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,832 - WARNING - [VO] Compression failed at layer 4: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,833 - WARNING - [VO] Compression failed at layer 5: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,834 - WARNING - [VO] Compression failed at layer 6: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,835 - WARNING - [VO] Compression failed at layer 7: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,836 - WARNING - [VO] Compression failed at layer 8: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,837 - WARNING - [VO] Compression failed at layer 9: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,838 - WARNING - [VO] Compression failed at layer 10: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,839 - WARNING - [VO] Compression failed at layer 11: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,840 - WARNING - [VO] Compression failed at layer 12: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,842 - WARNING - [VO] Compression failed at layer 13: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,844 - WARNING - [VO] Compression failed at layer 14: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,852 - WARNING - [VO] Compression failed at layer 15: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,859 - WARNING - [VO] Compression failed at layer 16: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,867 - WARNING - [VO] Compression failed at layer 17: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,875 - WARNING - [VO] Compression failed at layer 18: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,883 - WARNING - [VO] Compression failed at layer 19: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,891 - WARNING - [VO] Compression failed at layer 20: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,899 - WARNING - [VO] Compression failed at layer 21: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,907 - WARNING - [VO] Compression failed at layer 22: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,914 - WARNING - [VO] Compression failed at layer 23: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,922 - WARNING - [VO] Compression failed at layer 24: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,930 - WARNING - [VO] Compression failed at layer 25: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,938 - WARNING - [VO] Compression failed at layer 26: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,946 - WARNING - [VO] Compression failed at layer 27: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,954 - WARNING - [VO] Compression failed at layer 28: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,961 - WARNING - [VO] Compression failed at layer 29: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,969 - WARNING - [VO] Compression failed at layer 30: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,977 - WARNING - [VO] Compression failed at layer 31: mat1 and mat2 shapes cannot be multiplied (4096x128 and 4096x128)
+2025-05-03 05:31:08,978 - INFO - Saving compressed model...
+2025-05-03 05:33:13,575 - INFO - ✔ Model, tokenizer, and tokenizer_source.txt saved to /u/scratch/x/xxiong/compressed_output/llama2-7b
+2025-05-03 05:33:13,581 - INFO - Reloading compressed model for evaluation...
+2025-05-03 05:33:13,582 - INFO - Reloading compressed model from: /u/scratch/x/xxiong/compressed_output/llama2-7b
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  6.10it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:03<00:01,  1.94s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:05<00:00,  2.13s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:05<00:00,  1.90s/it]
+2025-05-03 05:35:08,537 - INFO - ✔ Reloaded compressed model to cuda:0 successfully.
+2025-05-03 05:36:04,923 - INFO - Compressed model perplexity on WikiText2: 6.50

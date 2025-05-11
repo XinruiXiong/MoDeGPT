@@ -1,0 +1,45 @@
+2025-05-05 19:41:03,353 - INFO - Loading model: meta-llama/Llama-2-7b-hf
+2025-05-05 19:41:03,353 - INFO - Loading model from: meta-llama/Llama-2-7b-hf
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.80it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.42it/s]
+2025-05-05 19:41:11,271 - INFO - ✔ Loaded model on cuda:0 with float16.
+2025-05-05 19:41:11,272 - INFO - No pad_token found. Set pad_token = eos_token.
+2025-05-05 19:41:11,273 - INFO - Loading calibration and evaluation texts...
+2025-05-05 19:41:24,743 - INFO - Evaluating original model (for baseline perplexity)...
+Traceback (most recent call last):
+  File "/u/home/x/xxiong/MoDeGPT/run_modegpt.py", line 369, in <module>
+    main()
+  File "/u/home/x/xxiong/MoDeGPT/run_modegpt.py", line 251, in main
+    baseline_ppl = compute_perplexity(model, tokenizer, eval_texts, device=device)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/u/home/x/xxiong/MoDeGPT/evaluation.py", line 39, in compute_perplexity
+    outputs = model(input_ids=input_chunk, labels=labels, attention_mask=attention_mask)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1164, in forward
+    outputs = self.model(
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 968, in forward
+    layer_outputs = decoder_layer(
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 713, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 624, in forward
+    query_states, key_states = apply_rotary_pos_emb(query_states, key_states, cos, sin)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 183, in apply_rotary_pos_emb
+    k_embed = (k * cos) + (rotate_half(k) * sin)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 157, in rotate_half
+    return torch.cat((-x2, x1), dim=-1)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB. GPU 0 has a total capacity of 79.15 GiB of which 12.56 MiB is free. Process 138124 has 13.88 GiB memory in use. Process 193919 has 52.04 GiB memory in use. Including non-PyTorch memory, this process has 13.20 GiB memory in use. Of the allocated memory 12.68 GiB is allocated by PyTorch, and 21.87 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

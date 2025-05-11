@@ -1,0 +1,35 @@
+Loading compressed model to CUDA...
+Loading original model to CPU...
+Starting VO weight comparison (v_proj & o_proj)...
+[Layer 00] v_proj diff: 0.000000 | o_proj diff: 0.000000
+[Layer 01] v_proj diff: 0.005470 | o_proj diff: 0.004243
+[Layer 02] v_proj diff: 0.007436 | o_proj diff: 0.007136
+[Layer 03] v_proj diff: 0.006922 | o_proj diff: 0.006710
+[Layer 04] v_proj diff: 0.007286 | o_proj diff: 0.007089
+[Layer 05] v_proj diff: 0.007295 | o_proj diff: 0.007132
+[Layer 06] v_proj diff: 0.006795 | o_proj diff: 0.006684
+[Layer 07] v_proj diff: 0.006848 | o_proj diff: 0.006704
+[Layer 08] v_proj diff: 0.006993 | o_proj diff: 0.006876
+[Layer 09] v_proj diff: 0.007008 | o_proj diff: 0.006933
+[Layer 10] v_proj diff: 0.007038 | o_proj diff: 0.006994
+[Layer 11] v_proj diff: 0.007295 | o_proj diff: 0.007226
+[Layer 12] v_proj diff: 0.007046 | o_proj diff: 0.007012
+[Layer 13] v_proj diff: 0.007360 | o_proj diff: 0.007297
+[Layer 14] v_proj diff: 0.007148 | o_proj diff: 0.007100
+[Layer 15] v_proj diff: 0.007505 | o_proj diff: 0.007412
+[Layer 16] v_proj diff: 0.007791 | o_proj diff: 0.007715
+[Layer 17] v_proj diff: 0.007610 | o_proj diff: 0.007562
+[Layer 18] v_proj diff: 0.008028 | o_proj diff: 0.007899
+[Layer 19] v_proj diff: 0.007943 | o_proj diff: 0.007856
+[Layer 20] v_proj diff: 0.008067 | o_proj diff: 0.007995
+[Layer 21] v_proj diff: 0.008076 | o_proj diff: 0.007939
+[Layer 22] v_proj diff: 0.008148 | o_proj diff: 0.007976
+[Layer 23] v_proj diff: 0.008417 | o_proj diff: 0.008285
+[Layer 24] v_proj diff: 0.008264 | o_proj diff: 0.008084
+[Layer 25] v_proj diff: 0.008646 | o_proj diff: 0.008506
+[Layer 26] v_proj diff: 0.008815 | o_proj diff: 0.008696
+[Layer 27] v_proj diff: 0.008757 | o_proj diff: 0.008695
+[Layer 28] v_proj diff: 0.008998 | o_proj diff: 0.008934
+[Layer 29] v_proj diff: 0.009043 | o_proj diff: 0.009054
+[Layer 30] v_proj diff: 0.009623 | o_proj diff: 0.009639
+[Layer 31] v_proj diff: 0.010761 | o_proj diff: 0.010735

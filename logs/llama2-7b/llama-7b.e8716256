@@ -1,0 +1,151 @@
+2025-05-03 10:18:19,669 - INFO - Loading model: meta-llama/Llama-2-7b-hf
+2025-05-03 10:18:19,670 - INFO - Loading model from: meta-llama/Llama-2-7b-hf
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.98it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  6.16it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  6.13it/s]
+2025-05-03 10:18:31,169 - INFO - ✔ Loaded model on cuda:0 with float16.
+2025-05-03 10:18:31,171 - INFO - No pad_token found. Set pad_token = eos_token.
+2025-05-03 10:18:31,172 - INFO - Loading calibration and evaluation texts...
+2025-05-03 10:18:44,291 - INFO - Evaluating original model (for baseline perplexity)...
+2025-05-03 10:19:40,262 - INFO - Original model perplexity on WikiText2: 5.72
+2025-05-03 10:19:40,263 - INFO - Calibrating model...
+2025-05-03 10:19:40,263 - INFO - Detected architecture: llama
+2025-05-03 10:23:03,986 - INFO - Finished calibration and computed BI scores.
+2025-05-03 10:23:03,989 - INFO - Allocating layer sparsity...
+2025-05-03 10:23:03,990 - INFO - Allocating global sparsity using target keep ratio 0.5000 and temperature 1.0
+2025-05-03 10:23:03,990 - INFO - Layer  0: keep_ratio = 1.0000 (BI = 0.4532)
+2025-05-03 10:23:03,990 - INFO - Layer  1: keep_ratio = 0.3774 (BI = 0.3471)
+2025-05-03 10:23:03,990 - INFO - Layer  2: keep_ratio = 0.4513 (BI = 0.1683)
+2025-05-03 10:23:03,990 - INFO - Layer  3: keep_ratio = 0.4585 (BI = 0.1526)
+2025-05-03 10:23:03,990 - INFO - Layer  4: keep_ratio = 0.4563 (BI = 0.1575)
+2025-05-03 10:23:03,990 - INFO - Layer  5: keep_ratio = 0.4629 (BI = 0.1431)
+2025-05-03 10:23:03,990 - INFO - Layer  6: keep_ratio = 0.4640 (BI = 0.1407)
+2025-05-03 10:23:03,990 - INFO - Layer  7: keep_ratio = 0.4671 (BI = 0.1339)
+2025-05-03 10:23:03,990 - INFO - Layer  8: keep_ratio = 0.4736 (BI = 0.1201)
+2025-05-03 10:23:03,990 - INFO - Layer  9: keep_ratio = 0.4782 (BI = 0.1105)
+2025-05-03 10:23:03,990 - INFO - Layer 10: keep_ratio = 0.4819 (BI = 0.1027)
+2025-05-03 10:23:03,990 - INFO - Layer 11: keep_ratio = 0.4873 (BI = 0.0916)
+2025-05-03 10:23:03,990 - INFO - Layer 12: keep_ratio = 0.4869 (BI = 0.0925)
+2025-05-03 10:23:03,990 - INFO - Layer 13: keep_ratio = 0.4864 (BI = 0.0936)
+2025-05-03 10:23:03,990 - INFO - Layer 14: keep_ratio = 0.4904 (BI = 0.0853)
+2025-05-03 10:23:03,990 - INFO - Layer 15: keep_ratio = 0.4856 (BI = 0.0952)
+2025-05-03 10:23:03,990 - INFO - Layer 16: keep_ratio = 0.4893 (BI = 0.0876)
+2025-05-03 10:23:03,990 - INFO - Layer 17: keep_ratio = 0.4964 (BI = 0.0731)
+2025-05-03 10:23:03,990 - INFO - Layer 18: keep_ratio = 0.4998 (BI = 0.0663)
+2025-05-03 10:23:03,990 - INFO - Layer 19: keep_ratio = 0.5058 (BI = 0.0543)
+2025-05-03 10:23:03,990 - INFO - Layer 20: keep_ratio = 0.5073 (BI = 0.0514)
+2025-05-03 10:23:03,990 - INFO - Layer 21: keep_ratio = 0.5130 (BI = 0.0403)
+2025-05-03 10:23:03,990 - INFO - Layer 22: keep_ratio = 0.5135 (BI = 0.0393)
+2025-05-03 10:23:03,990 - INFO - Layer 23: keep_ratio = 0.5170 (BI = 0.0324)
+2025-05-03 10:23:03,990 - INFO - Layer 24: keep_ratio = 0.5174 (BI = 0.0317)
+2025-05-03 10:23:03,990 - INFO - Layer 25: keep_ratio = 0.5174 (BI = 0.0317)
+2025-05-03 10:23:03,990 - INFO - Layer 26: keep_ratio = 0.5186 (BI = 0.0295)
+2025-05-03 10:23:03,990 - INFO - Layer 27: keep_ratio = 0.5191 (BI = 0.0284)
+2025-05-03 10:23:03,990 - INFO - Layer 28: keep_ratio = 0.5180 (BI = 0.0306)
+2025-05-03 10:23:03,990 - INFO - Layer 29: keep_ratio = 0.5170 (BI = 0.0326)
+2025-05-03 10:23:03,990 - INFO - Layer 30: keep_ratio = 0.4886 (BI = 0.0890)
+2025-05-03 10:23:03,990 - INFO - Layer 31: keep_ratio = 0.3540 (BI = 0.4112)
+2025-05-03 10:23:03,990 - INFO - Freeing original model from GPU before compression...
+2025-05-03 10:23:12,780 - INFO - n_layers=32, n_heads=32, d_model=4096, head_dim=128
+2025-05-03 10:23:12,781 - INFO - Applying MoDeGPT compression methods...
+2025-05-03 10:24:29,877 - INFO - [MLP] Compressed layer 0 to rank 11008 (Nyström, λ=0.01)
+2025-05-03 10:24:40,171 - INFO - [MLP] Compressed layer 1 to rank 4154 (Nyström, λ=0.01)
+2025-05-03 10:24:53,839 - INFO - [MLP] Compressed layer 2 to rank 4968 (Nyström, λ=0.01)
+2025-05-03 10:25:07,450 - INFO - [MLP] Compressed layer 3 to rank 5046 (Nyström, λ=0.01)
+2025-05-03 10:25:20,381 - INFO - [MLP] Compressed layer 4 to rank 5022 (Nyström, λ=0.01)
+2025-05-03 10:25:33,785 - INFO - [MLP] Compressed layer 5 to rank 5095 (Nyström, λ=0.01)
+2025-05-03 10:25:47,164 - INFO - [MLP] Compressed layer 6 to rank 5107 (Nyström, λ=0.01)
+2025-05-03 10:26:00,644 - INFO - [MLP] Compressed layer 7 to rank 5142 (Nyström, λ=0.01)
+2025-05-03 10:26:14,686 - INFO - [MLP] Compressed layer 8 to rank 5213 (Nyström, λ=0.01)
+2025-05-03 10:26:28,324 - INFO - [MLP] Compressed layer 9 to rank 5264 (Nyström, λ=0.01)
+2025-05-03 10:26:42,952 - INFO - [MLP] Compressed layer 10 to rank 5305 (Nyström, λ=0.01)
+2025-05-03 10:26:57,708 - INFO - [MLP] Compressed layer 11 to rank 5364 (Nyström, λ=0.01)
+2025-05-03 10:27:12,672 - INFO - [MLP] Compressed layer 12 to rank 5359 (Nyström, λ=0.01)
+2025-05-03 10:27:26,913 - INFO - [MLP] Compressed layer 13 to rank 5354 (Nyström, λ=0.01)
+2025-05-03 10:27:41,802 - INFO - [MLP] Compressed layer 14 to rank 5398 (Nyström, λ=0.01)
+2025-05-03 10:27:56,667 - INFO - [MLP] Compressed layer 15 to rank 5345 (Nyström, λ=0.01)
+2025-05-03 10:28:11,570 - INFO - [MLP] Compressed layer 16 to rank 5385 (Nyström, λ=0.01)
+2025-05-03 10:28:26,709 - INFO - [MLP] Compressed layer 17 to rank 5464 (Nyström, λ=0.01)
+2025-05-03 10:28:46,884 - INFO - [MLP] Compressed layer 18 to rank 5502 (Nyström, λ=0.01)
+2025-05-03 10:29:54,725 - INFO - [MLP] Compressed layer 19 to rank 5568 (Nyström, λ=0.01)
+2025-05-03 10:31:03,264 - INFO - [MLP] Compressed layer 20 to rank 5584 (Nyström, λ=0.01)
+2025-05-03 10:32:13,553 - INFO - [MLP] Compressed layer 21 to rank 5646 (Nyström, λ=0.01)
+2025-05-03 10:33:23,511 - INFO - [MLP] Compressed layer 22 to rank 5652 (Nyström, λ=0.01)
+2025-05-03 10:34:33,724 - INFO - [MLP] Compressed layer 23 to rank 5691 (Nyström, λ=0.01)
+2025-05-03 10:35:44,359 - INFO - [MLP] Compressed layer 24 to rank 5695 (Nyström, λ=0.01)
+2025-05-03 10:36:54,410 - INFO - [MLP] Compressed layer 25 to rank 5695 (Nyström, λ=0.01)
+2025-05-03 10:38:04,614 - INFO - [MLP] Compressed layer 26 to rank 5708 (Nyström, λ=0.01)
+2025-05-03 10:39:15,470 - INFO - [MLP] Compressed layer 27 to rank 5714 (Nyström, λ=0.01)
+2025-05-03 10:40:26,949 - INFO - [MLP] Compressed layer 28 to rank 5701 (Nyström, λ=0.01)
+2025-05-03 10:41:36,094 - INFO - [MLP] Compressed layer 29 to rank 5690 (Nyström, λ=0.01)
+2025-05-03 10:42:44,691 - INFO - [MLP] Compressed layer 30 to rank 5378 (Nyström, λ=0.01)
+2025-05-03 10:43:43,170 - INFO - [MLP] Compressed layer 31 to rank 3896 (Nyström, λ=0.01)
+2025-05-03 10:44:07,967 - INFO - [QK] Compressed layer 0 to rank 128 per head (ridge λ=0.01)
+2025-05-03 10:44:31,329 - INFO - [QK] Compressed layer 1 to rank 48 per head (ridge λ=0.01)
+2025-05-03 10:44:54,829 - INFO - [QK] Compressed layer 2 to rank 57 per head (ridge λ=0.01)
+2025-05-03 10:45:17,944 - INFO - [QK] Compressed layer 3 to rank 58 per head (ridge λ=0.01)
+2025-05-03 10:45:41,547 - INFO - [QK] Compressed layer 4 to rank 58 per head (ridge λ=0.01)
+2025-05-03 10:46:04,794 - INFO - [QK] Compressed layer 5 to rank 59 per head (ridge λ=0.01)
+2025-05-03 10:46:28,183 - INFO - [QK] Compressed layer 6 to rank 59 per head (ridge λ=0.01)
+2025-05-03 10:46:51,859 - INFO - [QK] Compressed layer 7 to rank 59 per head (ridge λ=0.01)
+2025-05-03 10:47:14,771 - INFO - [QK] Compressed layer 8 to rank 60 per head (ridge λ=0.01)
+2025-05-03 10:47:38,455 - INFO - [QK] Compressed layer 9 to rank 61 per head (ridge λ=0.01)
+2025-05-03 10:48:01,833 - INFO - [QK] Compressed layer 10 to rank 61 per head (ridge λ=0.01)
+2025-05-03 10:48:25,437 - INFO - [QK] Compressed layer 11 to rank 62 per head (ridge λ=0.01)
+2025-05-03 10:48:49,060 - INFO - [QK] Compressed layer 12 to rank 62 per head (ridge λ=0.01)
+2025-05-03 10:49:12,277 - INFO - [QK] Compressed layer 13 to rank 62 per head (ridge λ=0.01)
+2025-05-03 10:49:35,524 - INFO - [QK] Compressed layer 14 to rank 62 per head (ridge λ=0.01)
+2025-05-03 10:49:58,658 - INFO - [QK] Compressed layer 15 to rank 62 per head (ridge λ=0.01)
+2025-05-03 10:50:22,325 - INFO - [QK] Compressed layer 16 to rank 62 per head (ridge λ=0.01)
+2025-05-03 10:50:45,814 - INFO - [QK] Compressed layer 17 to rank 63 per head (ridge λ=0.01)
+2025-05-03 10:51:09,132 - INFO - [QK] Compressed layer 18 to rank 63 per head (ridge λ=0.01)
+2025-05-03 10:51:32,410 - INFO - [QK] Compressed layer 19 to rank 64 per head (ridge λ=0.01)
+2025-05-03 10:51:55,639 - INFO - [QK] Compressed layer 20 to rank 64 per head (ridge λ=0.01)
+2025-05-03 10:52:18,844 - INFO - [QK] Compressed layer 21 to rank 65 per head (ridge λ=0.01)
+2025-05-03 10:52:42,462 - INFO - [QK] Compressed layer 22 to rank 65 per head (ridge λ=0.01)
+2025-05-03 10:53:05,583 - INFO - [QK] Compressed layer 23 to rank 66 per head (ridge λ=0.01)
+2025-05-03 10:53:28,836 - INFO - [QK] Compressed layer 24 to rank 66 per head (ridge λ=0.01)
+2025-05-03 10:53:52,408 - INFO - [QK] Compressed layer 25 to rank 66 per head (ridge λ=0.01)
+2025-05-03 10:54:15,710 - INFO - [QK] Compressed layer 26 to rank 66 per head (ridge λ=0.01)
+2025-05-03 10:54:38,859 - INFO - [QK] Compressed layer 27 to rank 66 per head (ridge λ=0.01)
+2025-05-03 10:55:02,156 - INFO - [QK] Compressed layer 28 to rank 66 per head (ridge λ=0.01)
+2025-05-03 10:55:25,716 - INFO - [QK] Compressed layer 29 to rank 66 per head (ridge λ=0.01)
+2025-05-03 10:55:49,305 - INFO - [QK] Compressed layer 30 to rank 62 per head (ridge λ=0.01)
+2025-05-03 10:56:12,583 - INFO - [QK] Compressed layer 31 to rank 45 per head (ridge λ=0.01)
+2025-05-03 11:08:43,474 - INFO - [VO] Compressed layer 0 to rank 128 (Type-III SVD, llama)
+2025-05-03 11:21:12,534 - INFO - [VO] Compressed layer 1 to rank 48 (Type-III SVD, llama)
+2025-05-03 11:33:50,126 - INFO - [VO] Compressed layer 2 to rank 57 (Type-III SVD, llama)
+2025-05-03 11:46:28,132 - INFO - [VO] Compressed layer 3 to rank 58 (Type-III SVD, llama)
+2025-05-03 11:59:06,247 - INFO - [VO] Compressed layer 4 to rank 58 (Type-III SVD, llama)
+2025-05-03 12:11:44,129 - INFO - [VO] Compressed layer 5 to rank 59 (Type-III SVD, llama)
+2025-05-03 12:24:18,870 - INFO - [VO] Compressed layer 6 to rank 59 (Type-III SVD, llama)
+2025-05-03 12:36:51,580 - INFO - [VO] Compressed layer 7 to rank 59 (Type-III SVD, llama)
+2025-05-03 12:49:26,614 - INFO - [VO] Compressed layer 8 to rank 60 (Type-III SVD, llama)
+2025-05-03 13:02:05,926 - INFO - [VO] Compressed layer 9 to rank 61 (Type-III SVD, llama)
+2025-05-03 13:14:44,210 - INFO - [VO] Compressed layer 10 to rank 61 (Type-III SVD, llama)
+2025-05-03 13:27:19,450 - INFO - [VO] Compressed layer 11 to rank 62 (Type-III SVD, llama)
+2025-05-03 13:39:59,753 - INFO - [VO] Compressed layer 12 to rank 62 (Type-III SVD, llama)
+2025-05-03 13:52:39,307 - INFO - [VO] Compressed layer 13 to rank 62 (Type-III SVD, llama)
+2025-05-03 14:05:20,197 - INFO - [VO] Compressed layer 14 to rank 62 (Type-III SVD, llama)
+2025-05-03 14:17:59,552 - INFO - [VO] Compressed layer 15 to rank 62 (Type-III SVD, llama)
+2025-05-03 14:30:39,818 - INFO - [VO] Compressed layer 16 to rank 62 (Type-III SVD, llama)
+2025-05-03 14:43:21,647 - INFO - [VO] Compressed layer 17 to rank 63 (Type-III SVD, llama)
+2025-05-03 14:55:55,054 - INFO - [VO] Compressed layer 18 to rank 63 (Type-III SVD, llama)
+2025-05-03 15:08:30,436 - INFO - [VO] Compressed layer 19 to rank 64 (Type-III SVD, llama)
+2025-05-03 15:21:08,976 - INFO - [VO] Compressed layer 20 to rank 64 (Type-III SVD, llama)
+2025-05-03 15:33:46,065 - INFO - [VO] Compressed layer 21 to rank 65 (Type-III SVD, llama)
+2025-05-03 15:46:24,261 - INFO - [VO] Compressed layer 22 to rank 65 (Type-III SVD, llama)
+2025-05-03 15:59:03,789 - INFO - [VO] Compressed layer 23 to rank 66 (Type-III SVD, llama)
+2025-05-03 16:11:42,163 - INFO - [VO] Compressed layer 24 to rank 66 (Type-III SVD, llama)
+2025-05-03 16:24:21,180 - INFO - [VO] Compressed layer 25 to rank 66 (Type-III SVD, llama)
+2025-05-03 16:37:01,982 - INFO - [VO] Compressed layer 26 to rank 66 (Type-III SVD, llama)
+2025-05-03 16:49:43,484 - INFO - [VO] Compressed layer 27 to rank 66 (Type-III SVD, llama)
+2025-05-03 17:02:26,208 - INFO - [VO] Compressed layer 28 to rank 66 (Type-III SVD, llama)
+2025-05-03 17:15:06,798 - INFO - [VO] Compressed layer 29 to rank 66 (Type-III SVD, llama)
+2025-05-03 17:27:45,276 - INFO - [VO] Compressed layer 30 to rank 62 (Type-III SVD, llama)
+2025-05-03 17:40:26,720 - INFO - [VO] Compressed layer 31 to rank 45 (Type-III SVD, llama)
+2025-05-03 17:40:26,723 - INFO - Saving compressed model...
+2025-05-03 17:42:41,200 - INFO - ✔ Model, tokenizer, and tokenizer_source.txt saved to /u/scratch/x/xxiong/compressed_output/llama2-7b
+2025-05-03 17:42:41,202 - INFO - Reloading compressed model for evaluation...
+2025-05-03 17:42:41,202 - INFO - Reloading compressed model from: /u/scratch/x/xxiong/compressed_output/llama2-7b
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  8.42it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:02<00:01,  1.19s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.42it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.37it/s]
+2025-05-03 17:43:31,272 - INFO - ✔ Reloaded compressed model to cuda:0 successfully.
+2025-05-03 17:44:53,585 - INFO - Compressed model perplexity on WikiText2: 34543.15

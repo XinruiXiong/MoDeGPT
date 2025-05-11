@@ -1,0 +1,27 @@
+2025-05-02 20:54:43,952 - INFO - Loading model: meta-llama/Llama-2-7b-hf
+2025-05-02 20:54:43,952 - INFO - Loading model from: meta-llama/Llama-2-7b-hf
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.92it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  9.19it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  9.13it/s]
+2025-05-02 20:54:51,657 - ERROR - [Error] Failed to load model meta-llama/Llama-2-7b-hf: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 79.15 GiB of which 2.06 MiB is free. Process 49457 has 77.67 GiB memory in use. Including non-PyTorch memory, this process has 1.47 GiB memory in use. Of the allocated memory 1.06 GiB is allocated by PyTorch, and 1.97 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/u/home/x/xxiong/MoDeGPT/run_modegpt.py", line 355, in <module>
+    main()
+  File "/u/home/x/xxiong/MoDeGPT/run_modegpt.py", line 237, in main
+    model, tokenizer, config = load_model(args.model, device=device)
+  File "/u/home/x/xxiong/MoDeGPT/model_utils.py", line 166, in load_model
+    model.to(f"cuda:{device}")
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2724, in to
+    return super().to(*args, **kwargs)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1343, in to
+    return self._apply(convert)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  [Previous line repeated 2 more times]
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 930, in _apply
+    param_applied = fn(param)
+  File "/u/home/x/xxiong/miniforge3/envs/modegpt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1329, in convert
+    return t.to(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 79.15 GiB of which 2.06 MiB is free. Process 49457 has 77.67 GiB memory in use. Including non-PyTorch memory, this process has 1.47 GiB memory in use. Of the allocated memory 1.06 GiB is allocated by PyTorch, and 1.97 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
