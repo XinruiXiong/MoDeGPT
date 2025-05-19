@@ -29,7 +29,7 @@ def compress_vo(model, cov=None, keep_ratios=None, rank=None,
             if logger: logger.warning(f"[VO] Layer {i}: cannot access v_proj/o_proj: {e}")
             continue
 
-        # === 压缩每个 head ===
+        # === compress each head ===
         for h in range(n_heads):
             s, e = h * head_dim, (h + 1) * head_dim
             try:
