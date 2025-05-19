@@ -13,7 +13,7 @@ def compress_vo(model, cov=None, keep_ratios=None, rank=None,
         rank_i = int(head_dim * keep_ratio) if rank is None else rank
         rank_i = max(min_rank, min(rank_i, head_dim))
 
-        # === 模型架构判断 ===
+        # === model arch identify ===
         try:
             try:
                 # OPT
